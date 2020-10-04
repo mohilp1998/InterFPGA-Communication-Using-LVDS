@@ -1,0 +1,6 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+    {{"Slow -6 1.2V 85 Model"} {ECHO_FPGA12_6_1200mv_85c_slow.vo ECHO_FPGA12_6_1200mv_85c_v_slow.sdo}}
+    {{"Slow -6 1.2V 0 Model"} {ECHO_FPGA12_6_1200mv_0c_slow.vo ECHO_FPGA12_6_1200mv_0c_v_slow.sdo}}
+    {{"Fast -M 1.2V 0 Model"} {ECHO_FPGA12_min_1200mv_0c_fast.vo ECHO_FPGA12_min_1200mv_0c_v_fast.sdo}}
+}

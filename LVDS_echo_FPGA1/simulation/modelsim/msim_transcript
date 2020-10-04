@@ -1,0 +1,771 @@
+# do LVDS_echo_FPGA1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/mohil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:24:59 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/tx.v 
+# -- Compiling module tx
+# 
+# Top level modules:
+# 	tx
+# End time: 18:24:59 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/SyncFIFO1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/SyncFIFO1.v 
+# -- Compiling module SyncFIFO1
+# 
+# Top level modules:
+# 	SyncFIFO1
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/rx.v 
+# -- Compiling module rx
+# 
+# Top level modules:
+# 	rx
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/RegFileLoadSyn.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/RegFileLoadSyn.v 
+# -- Compiling module RegFileLoadSyn
+# 
+# Top level modules:
+# 	RegFileLoadSyn
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/LVDS_fpga.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/LVDS_fpga.v 
+# -- Compiling module LVDS_fpga
+# 
+# Top level modules:
+# 	LVDS_fpga
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/FPGA1_TopNiosInterface.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/FPGA1_TopNiosInterface.v 
+# -- Compiling module FPGA1_TopNiosInterface
+# 
+# Top level modules:
+# 	FPGA1_TopNiosInterface
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_onchip_memory2_0.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_onchip_memory2_0
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_onchip_memory2_0
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_test_bench.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_test_bench
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_test_bench
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_wrapper
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_tck.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_tck
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_debug_slave_sysclk
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_register_bank_a_module
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_register_bank_b_module
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_debug
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_break
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_xbrk
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_dbrk
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_itrace
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_td_mode
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_dtrace
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_fifo
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_pib
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci_im
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_performance_monitors
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_avalon_reg
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_ociram_sp_ram_module
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_ocimem
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_oci
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu_nios2_performance_monitors
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0_cpu
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_nios2_gen2_0.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_nios2_gen2_0
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_nios2_gen2_0
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_jtag_uart_0.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys_jtag_uart_0_sim_scfifo_w
+# -- Compiling module LVDS_echo_FPGA1_qsys_jtag_uart_0_scfifo_w
+# -- Compiling module LVDS_echo_FPGA1_qsys_jtag_uart_0_sim_scfifo_r
+# -- Compiling module LVDS_echo_FPGA1_qsys_jtag_uart_0_scfifo_r
+# -- Compiling module LVDS_echo_FPGA1_qsys_jtag_uart_0
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_jtag_uart_0
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:25:00 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/LVDS_echo_FPGA1_qsys.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:00 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/LVDS_echo_FPGA1_qsys.v 
+# -- Compiling module LVDS_echo_FPGA1_qsys
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/db {/home/mohil/LVDS/LVDS_echo_FPGA1/db/tx_lvds_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/db" /home/mohil/LVDS/LVDS_echo_FPGA1/db/tx_lvds_tx.v 
+# -- Compiling module tx_ddio_out
+# -- Compiling module tx_ddio_out1
+# -- Compiling module tx_cmpr
+# -- Compiling module tx_cntr
+# -- Compiling module tx_shift_reg
+# -- Compiling module tx_shift_reg1
+# -- Compiling module tx_lvds_tx
+# 
+# Top level modules:
+# 	tx_lvds_tx
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/db {/home/mohil/LVDS/LVDS_echo_FPGA1/db/rx_lvds_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/db" /home/mohil/LVDS/LVDS_echo_FPGA1/db/rx_lvds_rx.v 
+# -- Compiling module rx_lvds_ddio_in
+# -- Compiling module rx_dffpipe
+# -- Compiling module rx_cntr
+# -- Compiling module rx_mux
+# -- Compiling module rx_lvds_rx
+# 
+# Top level modules:
+# 	rx_lvds_rx
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/SizedFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/SizedFIFO.v 
+# -- Compiling module SizedFIFO
+# 
+# Top level modules:
+# 	SizedFIFO
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/RegFile_1port.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/RegFile_1port.v 
+# -- Compiling module RegFile_1port
+# 
+# Top level modules:
+# 	RegFile_1port
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/module_outport_encoder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/module_outport_encoder.v 
+# -- Compiling module module_outport_encoder
+# 
+# Top level modules:
+# 	module_outport_encoder
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/module_gen_grant_carry.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/module_gen_grant_carry.v 
+# -- Compiling module module_gen_grant_carry
+# 
+# Top level modules:
+# 	module_gen_grant_carry
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkTop_fpga1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:01 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkTop_fpga1.v 
+# -- Compiling module mkTop_fpga1
+# 
+# Top level modules:
+# 	mkTop_fpga1
+# End time: 18:25:01 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkSepRouterAllocator.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkSepRouterAllocator.v 
+# -- Compiling module mkSepRouterAllocator
+# 
+# Top level modules:
+# 	mkSepRouterAllocator
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkRouterOutputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkRouterOutputArbitersRoundRobin.v 
+# -- Compiling module mkRouterOutputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterOutputArbitersRoundRobin
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkRouterInputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkRouterInputArbitersRoundRobin.v 
+# -- Compiling module mkRouterInputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterInputArbitersRoundRobin
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkOutPortFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkOutPortFIFO.v 
+# -- Compiling module mkOutPortFIFO
+# 
+# Top level modules:
+# 	mkOutPortFIFO
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_host.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_host.v 
+# -- Compiling module mkNodeTask_host
+# 
+# Top level modules:
+# 	mkNodeTask_host
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_fpga1_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_fpga1_4.v 
+# -- Compiling module mkNodeTask_fpga1_4
+# 
+# Top level modules:
+# 	mkNodeTask_fpga1_4
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_echo1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNodeTask_echo1.v 
+# -- Compiling module mkNodeTask_echo1
+# 
+# Top level modules:
+# 	mkNodeTask_echo1
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNetworkSimple1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkNetworkSimple1.v 
+# -- Compiling module mkNetworkSimple1
+# 
+# Top level modules:
+# 	mkNetworkSimple1
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkIQRouterCoreSimple.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkIQRouterCoreSimple.v 
+# -- Compiling module mkIQRouterCoreSimple
+# 
+# Top level modules:
+# 	mkIQRouterCoreSimple
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkInterFPGA_LVDS.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkInterFPGA_LVDS.v 
+# -- Compiling module mkInterFPGA_LVDS
+# 
+# Top level modules:
+# 	mkInterFPGA_LVDS
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkInputQueue.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkInputQueue.v 
+# -- Compiling module mkInputQueue
+# 
+# Top level modules:
+# 	mkInputQueue
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkCnctBridge.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/mkCnctBridge.v 
+# -- Compiling module mkCnctBridge
+# 
+# Top level modules:
+# 	mkCnctBridge
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2 {/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/FIFO2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2" /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/FIFO2.v 
+# -- Compiling module FIFO2
+# 
+# Top level modules:
+# 	FIFO2
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux_001
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_mux
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_rsp_demux
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_004.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_004.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_004_default_decode
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_004
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_004
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_002.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_002_default_decode
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_002
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_001.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_001_default_decode
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_001
+# End time: 18:25:02 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:02 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_router.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router_default_decode
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_router
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux_002.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux_002
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux_002
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_mux
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux_001
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_cmd_demux
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/LVDS_echo_FPGA1_qsys_irq_mapper.sv 
+# -- Compiling module LVDS_echo_FPGA1_qsys_irq_mapper
+# 
+# Top level modules:
+# 	LVDS_echo_FPGA1_qsys_irq_mapper
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules {/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:25:03 on Jun 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules" /home/mohil/LVDS/LVDS_echo_FPGA1/LVDS_echo_FPGA1_qsys/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 18:25:03 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim altera_mf_ver.altlvds_rx
+# vsim altera_mf_ver.altlvds_rx 
+# Start time: 18:28:08 on Jun 21,2018
+# Loading altera_mf_ver.altlvds_rx
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.stratix_lvds_rx
+# Loading altera_mf_ver.stratixgx_dpa_lvds_rx
+# Loading altera_mf_ver.flexible_lvds_rx
+# Loading altera_mf_ver.MF_stratix_pll
+# Loading altera_mf_ver.stx_m_cntr
+# Loading altera_mf_ver.stx_n_cntr
+# Loading altera_mf_ver.stx_scale_cntr
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.dffp
+vsim work.FPGA1_TopNiosInterface
+# End time: 18:28:53 on Jun 21,2018, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+# vsim work.FPGA1_TopNiosInterface 
+# Start time: 18:28:53 on Jun 21,2018
+# Loading work.FPGA1_TopNiosInterface
+# Loading work.mkTop_fpga1
+# Loading work.SizedFIFO
+# Loading work.mkNetworkSimple1
+# Loading work.RegFileLoadSyn
+# Loading work.mkIQRouterCoreSimple
+# Loading work.mkInputQueue
+# Loading work.RegFile_1port
+# Loading work.mkOutPortFIFO
+# Loading work.mkSepRouterAllocator
+# Loading work.mkRouterInputArbitersRoundRobin
+# Loading work.module_gen_grant_carry
+# Loading work.mkRouterOutputArbitersRoundRobin
+# Loading work.module_outport_encoder
+# Loading work.mkNodeTask_host
+# Loading work.mkCnctBridge
+# Loading work.FIFO2
+# Loading work.mkNodeTask_echo1
+# Loading work.mkNodeTask_fpga1_4
+# Loading work.mkInterFPGA_LVDS
+# Loading work.SyncFIFO1
+# Loading work.LVDS_fpga
+# Loading work.tx
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/tx.v(62): Instantiation of 'altlvds_tx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FPGA1_TopNiosInterface/fpga1/tx1 File: /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/tx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA1/simulation/modelsim/rtl_work
+# Loading work.rx
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/rx.v(64): Instantiation of 'altlvds_rx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FPGA1_TopNiosInterface/fpga1/rx1 File: /home/mohil/LVDS/LVDS_echo_FPGA1/src_files_2/rx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA1/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 18:28:53 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vsim rtl_work.FPGA1_TopNiosInterface -Lf altera_mf_ver -L altera_mf_ver
+# vsim rtl_work.FPGA1_TopNiosInterface -Lf altera_mf_ver -L altera_mf_ver 
+# Start time: 18:32:16 on Jun 21,2018
+# Loading rtl_work.FPGA1_TopNiosInterface
+# Loading rtl_work.mkTop_fpga1
+# Loading rtl_work.SizedFIFO
+# Loading rtl_work.mkNetworkSimple1
+# Loading rtl_work.RegFileLoadSyn
+# Loading rtl_work.mkIQRouterCoreSimple
+# Loading rtl_work.mkInputQueue
+# Loading rtl_work.RegFile_1port
+# Loading rtl_work.mkOutPortFIFO
+# Loading rtl_work.mkSepRouterAllocator
+# Loading rtl_work.mkRouterInputArbitersRoundRobin
+# Loading rtl_work.module_gen_grant_carry
+# Loading rtl_work.mkRouterOutputArbitersRoundRobin
+# Loading rtl_work.module_outport_encoder
+# Loading rtl_work.mkNodeTask_host
+# Loading rtl_work.mkCnctBridge
+# Loading rtl_work.FIFO2
+# Loading rtl_work.mkNodeTask_echo1
+# Loading rtl_work.mkNodeTask_fpga1_4
+# Loading rtl_work.mkInterFPGA_LVDS
+# Loading rtl_work.SyncFIFO1
+# Loading rtl_work.LVDS_fpga
+# Loading rtl_work.tx
+# Loading altera_mf_ver.altlvds_tx
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading rtl_work.rx
+# Loading altera_mf_ver.altlvds_rx
+# Loading altera_mf_ver.stratix_lvds_rx
+# Loading altera_mf_ver.stratixgx_dpa_lvds_rx
+# Loading altera_mf_ver.flexible_lvds_rx
+# Loading altera_mf_ver.MF_stratixiii_pll
+# Loading altera_mf_ver.ttn_m_cntr
+# Loading altera_mf_ver.ttn_n_cntr
+# Loading altera_mf_ver.ttn_scale_cntr
+# Loading altera_mf_ver.flexible_lvds_tx
+add wave -position insertpoint sim:/FPGA1_TopNiosInterface/*
+force -freeze sim:/FPGA1_TopNiosInterface/CLK 1 0, 0 {10000 ps} -r {20 ns}
+force -freeze sim:/FPGA1_TopNiosInterface/RST_N 1 0
+run
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: FPGA1_TopNiosInterface.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: FPGA1_TopNiosInterface.fpga1.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+run
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: FPGA1_TopNiosInterface.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:34:16 on Jun 21,2018, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 0

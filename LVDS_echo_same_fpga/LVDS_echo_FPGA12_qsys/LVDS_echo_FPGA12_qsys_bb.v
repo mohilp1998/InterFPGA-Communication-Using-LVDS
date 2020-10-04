@@ -1,0 +1,34 @@
+
+module LVDS_echo_FPGA12_qsys (
+	clk_clk,
+	reset_reset_n,
+	lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga1,
+	lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga2,
+	lvds_echo_fpga12_component_0_conduit_end_led_out);	
+
+	input		clk_clk;
+	input		reset_reset_n;
+	output	[1:0]	lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga1;
+	output		lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga1;
+	output		lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga2;
+	input		lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga1;
+	input	[1:0]	lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga1;
+	input		lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga1;
+	output		lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga1;
+	output	[1:0]	lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga2;
+	input		lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga2;
+	input	[1:0]	lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga2;
+	input		lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga2;
+	output		lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga2;
+	output	[7:0]	lvds_echo_fpga12_component_0_conduit_end_led_out;
+endmodule

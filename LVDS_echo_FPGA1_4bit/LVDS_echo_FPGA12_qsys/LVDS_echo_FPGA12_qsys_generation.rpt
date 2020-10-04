@@ -1,0 +1,103 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys.qsys --block-symbol-file --output-directory=/home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys.qsys
+Progress: Reading input file
+Progress: Adding LVDS_echo_FPGA12_4bit_0 [LVDS_echo_FPGA12_4bit 1.0]
+Progress: Parameterizing module LVDS_echo_FPGA12_4bit_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_counter_0 [clk_counter 1.0]
+Progress: Parameterizing module clk_counter_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: LVDS_echo_FPGA12_qsys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys.qsys --synthesis=VERILOG --output-directory=/home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys/synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys.qsys
+Progress: Reading input file
+Progress: Adding LVDS_echo_FPGA12_4bit_0 [LVDS_echo_FPGA12_4bit 1.0]
+Progress: Parameterizing module LVDS_echo_FPGA12_4bit_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_counter_0 [clk_counter 1.0]
+Progress: Parameterizing module clk_counter_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: LVDS_echo_FPGA12_qsys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: LVDS_echo_FPGA12_qsys: Generating LVDS_echo_FPGA12_qsys "LVDS_echo_FPGA12_qsys" for QUARTUS_SYNTH
+Info: LVDS_echo_FPGA12_4bit_0: "LVDS_echo_FPGA12_qsys" instantiated LVDS_echo_FPGA12_4bit "LVDS_echo_FPGA12_4bit_0"
+Info: clk_counter_0: "LVDS_echo_FPGA12_qsys" instantiated clk_counter "clk_counter_0"
+Warning: Overwriting different file /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys/synthesis/submodules/clk_counter.v
+Info: jtag_uart_0: Starting RTL generation for module 'LVDS_echo_FPGA12_qsys_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /home/mohil/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/mohil/altera_lite/16.0/quartus/linux64/perl/lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=LVDS_echo_FPGA12_qsys_jtag_uart_0 --dir=/tmp/alt7705_1786272359805837827.dir/0003_jtag_uart_0_gen/ --quartus_dir=/home/mohil/altera_lite/16.0/quartus --verilog --config=/tmp/alt7705_1786272359805837827.dir/0003_jtag_uart_0_gen//LVDS_echo_FPGA12_qsys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'LVDS_echo_FPGA12_qsys_jtag_uart_0'
+Info: jtag_uart_0: "LVDS_echo_FPGA12_qsys" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "LVDS_echo_FPGA12_qsys" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'LVDS_echo_FPGA12_qsys_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec /home/mohil/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/mohil/altera_lite/16.0/quartus/linux64/perl/lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/mohil/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=LVDS_echo_FPGA12_qsys_onchip_memory2_0 --dir=/tmp/alt7705_1786272359805837827.dir/0004_onchip_memory2_0_gen/ --quartus_dir=/home/mohil/altera_lite/16.0/quartus --verilog --config=/tmp/alt7705_1786272359805837827.dir/0004_onchip_memory2_0_gen//LVDS_echo_FPGA12_qsys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'LVDS_echo_FPGA12_qsys_onchip_memory2_0'
+Info: onchip_memory2_0: "LVDS_echo_FPGA12_qsys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "LVDS_echo_FPGA12_qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "LVDS_echo_FPGA12_qsys" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "LVDS_echo_FPGA12_qsys" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'LVDS_echo_FPGA12_qsys_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec /home/mohil/altera_lite/16.0/quartus/linux64//eperlcmd -I /home/mohil/altera_lite/16.0/quartus/linux64//perl/lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/mohil/altera_lite/16.0/quartus/sopc_builder/bin -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/mohil/altera_lite/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/mohil/altera_lite/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=LVDS_echo_FPGA12_qsys_nios2_gen2_0_cpu --dir=/tmp/alt7705_1786272359805837827.dir/0007_cpu_gen/ --quartus_bindir=/home/mohil/altera_lite/16.0/quartus/linux64/ --verilog --config=/tmp/alt7705_1786272359805837827.dir/0007_cpu_gen//LVDS_echo_FPGA12_qsys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.06.23 02:26:50 (*) Starting Nios II generation
+Info: cpu: # 2018.06.23 02:26:50 (*)   Checking for plaintext license.
+Info: cpu: # 2018.06.23 02:26:51 (*)   Plaintext license not found.
+Info: cpu: # 2018.06.23 02:26:51 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2018.06.23 02:26:51 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.06.23 02:26:51 (*)   Creating all objects for CPU
+Info: cpu: # 2018.06.23 02:26:52 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.06.23 02:26:52 (*)   Creating plain-text RTL
+Info: cpu: # 2018.06.23 02:26:53 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'LVDS_echo_FPGA12_qsys_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: LVDS_echo_FPGA12_qsys: Done "LVDS_echo_FPGA12_qsys" with 28 modules, 104 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

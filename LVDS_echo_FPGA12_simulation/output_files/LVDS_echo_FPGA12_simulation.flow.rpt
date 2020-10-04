@@ -1,0 +1,127 @@
+Flow report for LVDS_echo_FPGA12_simulation
+Thu Jun 21 19:20:35 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Jun 21 19:20:33 2018       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; LVDS_echo_FPGA12_simulation                 ;
+; Top-level Entity Name              ; mkMFpgaTop                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE22F17C6                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------+
+; Flow Settings                                   ;
++-------------------+-----------------------------+
+; Option            ; Setting                     ;
++-------------------+-----------------------------+
+; Start date & time ; 06/21/2018 19:19:41         ;
+; Main task         ; Compilation                 ;
+; Revision Name     ; LVDS_echo_FPGA12_simulation ;
++-------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++--------------------------------------+---------------------------------------+-----------------------------+-------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value               ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------+-----------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 0.152960878129410                     ; --                          ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --                          ; --          ; testbench.v    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench.v                           ; --                          ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --                          ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>                      ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                              ; --                          ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; src_files/testbench.v                 ; --                          ; --          ; testbench.v    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench.v                           ; --                          ; --          ; testbench.v    ;
+; EDA_TEST_BENCH_NAME                  ; testbench.v                           ; --                          ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                  ; --                          ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --                          ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --                          ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --                          ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --                          ; mkMFpgaTop  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --                          ; mkMFpgaTop  ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --                          ; mkMFpgaTop  ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --                          ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                          ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --                          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; mkMFpgaTop                            ; LVDS_echo_FPGA12_simulation ; --          ; --             ;
++--------------------------------------+---------------------------------------+-----------------------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:52     ; 1.0                     ; 1398 MB             ; 00:01:11                           ;
+; Total                ; 00:00:52     ; --                      ; --                  ; 00:01:11                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                  ;
++----------------------+----------------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname           ; OS Name        ; OS Version ; Processor type ;
++----------------------+----------------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; mohil-HP-Pavilion-Notebook ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
++----------------------+----------------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off LVDS_echo_FPGA12_simulation -c LVDS_echo_FPGA12_simulation
+
+
+

@@ -1,0 +1,156 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+# Date created = 12:22:51  June 19, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		LVDS_echo_FPGA2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY FPGA2_rst_TopInterface
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:22:51  JUNE 19, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_R8 -to CLK
+set_location_assignment PIN_C6 -to RST_N_gpio
+set_location_assignment PIN_J15 -to RST_N_key
+set_location_assignment PIN_A15 -to led[0]
+set_location_assignment PIN_A13 -to led[1]
+set_location_assignment PIN_B13 -to led[2]
+set_location_assignment PIN_A11 -to led[3]
+set_location_assignment PIN_D1 -to led[4]
+set_location_assignment PIN_F3 -to led[5]
+set_location_assignment PIN_B1 -to led[6]
+set_location_assignment PIN_L3 -to led[7]
+set_location_assignment PIN_C15 -to tx_outclock_fpga2
+set_location_assignment PIN_B8 -to rx_inclock_fpga2
+set_location_assignment PIN_F15 -to tx_out_fpga2[1]
+set_location_assignment PIN_G15 -to tx_out_fpga2[0]
+set_location_assignment PIN_N15 -to rx_in_fpga2[1]
+set_location_assignment PIN_R16 -to rx_in_fpga2[0]
+set_instance_assignment -name IO_STANDARD LVDS -to rx_in_fpga2[1]
+set_location_assignment PIN_N16 -to "rx_in_fpga2[1](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to rx_in_fpga2[0]
+set_location_assignment PIN_P16 -to "rx_in_fpga2[0](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to tx_out_fpga2[1]
+set_location_assignment PIN_F16 -to "tx_out_fpga2[1](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to tx_out_fpga2[0]
+set_location_assignment PIN_G16 -to "tx_out_fpga2[0](n)"
+set_instance_assignment -name IO_STANDARD "2.5 V" -to tx_outclock_fpga2
+set_location_assignment PIN_B12 -to rx_align_done_fpga2
+set_location_assignment PIN_D12 -to tx_align_done_fpga2
+set_global_assignment -name VERILOG_FILE src_files_2/tx.v
+set_global_assignment -name VERILOG_FILE src_files_2/tb.v
+set_global_assignment -name VERILOG_FILE src_files_2/SyncFIFO1.v
+set_global_assignment -name VERILOG_FILE src_files_2/SyncFIFO.v
+set_global_assignment -name VERILOG_FILE src_files_2/SizedFIFO.v
+set_global_assignment -name VERILOG_FILE src_files_2/rx.v
+set_global_assignment -name VERILOG_FILE src_files_2/RevertReg.v
+set_global_assignment -name VERILOG_FILE src_files_2/RegFileLoadSyn.v
+set_global_assignment -name VERILOG_FILE src_files_2/RegFile_1port.v
+set_global_assignment -name VERILOG_FILE src_files_2/RegFile.v
+set_global_assignment -name VERILOG_FILE src_files_2/module_outport_encoder.v
+set_global_assignment -name VERILOG_FILE src_files_2/module_gen_grant_carry.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkTop_fpga2.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkTop_fpga1.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkTb.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkSepRouterAllocator.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkRouterOutputArbitersStatic.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkRouterOutputArbitersRoundRobin.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkRouterInputArbitersStatic.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkRouterInputArbitersRoundRobin.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkOutputArbiter.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkOutPortFIFO.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNodeTask_host.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNodeTask_fpga2_5.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNodeTask_fpga1_4.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNodeTask_echo2.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNodeTask_echo1.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNetworkSimple2.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkNetworkSimple1.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkMFpgaTop.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkIQRouterCoreSimple.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkInterFPGA_LVDS.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkInputQueue.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkInputArbiter.v
+set_global_assignment -name VERILOG_FILE src_files_2/mkCnctBridge.v
+set_global_assignment -name VERILOG_FILE src_files_2/LVDS_fpga.v
+set_global_assignment -name VERILOG_FILE src_files_2/FPGA12_TopNiosInterface.v
+set_global_assignment -name VERILOG_FILE src_files_2/FPGA2_rst_TopInterface.v
+set_global_assignment -name SOURCE_FILE src_files_2/FPGA1_TopNiosInterface.v.bak
+set_global_assignment -name VERILOG_FILE src_files_2/FPGA1_TopNiosInterface.v
+set_global_assignment -name VERILOG_FILE src_files_2/FIFO10.v
+set_global_assignment -name VERILOG_FILE src_files_2/FIFO2.v
+set_global_assignment -name VERILOG_FILE src_files_2/FIFO1.v
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_23.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_22.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_21.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_20.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_13.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_12.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_11.hex
+set_global_assignment -name HEX_FILE src_files_2/customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_10.hex
+set_global_assignment -name VERILOG_FILE src_files_2/connect_parameters.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM2Load.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM2BELoad.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM2BE.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM2.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM1Load.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM1BELoad.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM1BE.v
+set_global_assignment -name VERILOG_FILE src_files_2/BRAM1.v
+set_global_assignment -name VERILOG_FILE src_files_2/Bram.v
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,221 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'rx_inclock'
+Slack : 0.756
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.106
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'tx_inclock'
+Slack : 6.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 7.822
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 8.539
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 13.886
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'rx_inclock'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'tx_inclock'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rx_inclock'
+Slack : 9.633
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'tx_inclock'
+Slack : 9.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'rx_inclock'
+Slack : 0.896
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.216
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'tx_inclock'
+Slack : 6.858
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 8.041
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 8.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 14.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'rx_inclock'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'tx_inclock'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rx_inclock'
+Slack : 9.656
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'tx_inclock'
+Slack : 9.660
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.744
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'rx_inclock'
+Slack : 1.572
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.472
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'tx_inclock'
+Slack : 7.643
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 8.725
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.130
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 15.332
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'rx_inclock'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'tx_inclock'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rx_inclock'
+Slack : 9.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'tx_inclock'
+Slack : 9.403
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.781
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jun 18 17:39:47 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : loop_back_verilog
+Top-level Entity Name : loop_back_verilog
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 293 / 22,320 ( 1 % )
+    Total combinational functions : 220 / 22,320 ( < 1 % )
+    Dedicated logic registers : 236 / 22,320 ( 1 % )
+Total registers : 246
+Total pins : 22 / 154 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )

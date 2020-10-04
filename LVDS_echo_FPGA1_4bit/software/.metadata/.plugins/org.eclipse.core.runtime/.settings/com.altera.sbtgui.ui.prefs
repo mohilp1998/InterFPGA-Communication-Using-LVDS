@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/home/mohil/LVDS/LVDS_echo_FPGA1_4bit/software/mysoft1
+newSoftwareExampleWizardPage.sopcinfoFile=/home/mohil/LVDS/LVDS_echo_FPGA1_4bit/LVDS_echo_FPGA12_qsys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/home/mohil/LVDS/LVDS_echo_FPGA1_4bit/software/mysoft1_bsp

@@ -1,0 +1,99 @@
+# do loop_back_verilog_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/mohil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v 
+# -- Compiling module SizedFIFO
+# 
+# Top level modules:
+# 	SizedFIFO
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v 
+# -- Compiling module loop_back_verilog
+# 
+# Top level modules:
+# 	loop_back_verilog
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v 
+# -- Compiling module tx
+# 
+# Top level modules:
+# 	tx
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v 
+# -- Compiling module rx
+# 
+# Top level modules:
+# 	rx
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v 
+# -- Compiling module tx_ddio_out
+# -- Compiling module tx_ddio_out1
+# -- Compiling module tx_cmpr
+# -- Compiling module tx_cntr
+# -- Compiling module tx_shift_reg
+# -- Compiling module tx_shift_reg1
+# -- Compiling module tx_lvds_tx
+# 
+# Top level modules:
+# 	tx_lvds_tx
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db {/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 13:12:53 on Jun 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db" /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v 
+# -- Compiling module rx_lvds_ddio_in
+# -- Compiling module rx_dffpipe
+# -- Compiling module rx_cntr
+# -- Compiling module rx_mux
+# -- Compiling module rx_lvds_rx
+# 
+# Top level modules:
+# 	rx_lvds_rx
+# End time: 13:12:53 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.loop_back_verilog
+# vsim work.loop_back_verilog 
+# Start time: 13:13:11 on Jun 18,2018
+# Loading work.loop_back_verilog
+# Loading work.tx
+# ** Error: (vsim-3033) /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v(62): Instantiation of 'altlvds_tx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /loop_back_verilog/tx1 File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v
+#         Searched libraries:
+#             /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/simulation/modelsim/rtl_work
+# Loading work.rx
+# ** Error: (vsim-3033) /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v(64): Instantiation of 'altlvds_rx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /loop_back_verilog/rx1 File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v
+#         Searched libraries:
+#             /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/simulation/modelsim/rtl_work
+# Loading work.SizedFIFO
+# Error loading design
+# End time: 13:13:11 on Jun 18,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0

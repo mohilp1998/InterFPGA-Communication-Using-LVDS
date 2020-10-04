@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jun 22 23:52:45 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : LVDS_echo_FPGA2_4bit
+Top-level Entity Name : FPGA2_rst_TopInterface
+Family : Cyclone IV E
+Total logic elements : 7,485
+    Total combinational functions : 4,669
+    Dedicated logic registers : 4,120
+Total registers : 4124
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

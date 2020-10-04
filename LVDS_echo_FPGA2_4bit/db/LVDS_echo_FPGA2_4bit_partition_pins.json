@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RDY_for_trans_fpga2",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_fpga2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RST_N_key",
+					"strict" : false
+				},
+				{
+					"name" : "RST_N_gpio",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RDY_from_recv_fpga2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

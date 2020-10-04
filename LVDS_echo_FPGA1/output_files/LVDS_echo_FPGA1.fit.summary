@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jun 22 17:15:42 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : LVDS_echo_FPGA1
+Top-level Entity Name : LVDS_echo_FPGA1_qsys
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 8,543 / 22,320 ( 38 % )
+    Total combinational functions : 6,972 / 22,320 ( 31 % )
+    Dedicated logic registers : 5,750 / 22,320 ( 26 % )
+Total registers : 5760
+Total pins : 23 / 154 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 277,440 / 608,256 ( 46 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )

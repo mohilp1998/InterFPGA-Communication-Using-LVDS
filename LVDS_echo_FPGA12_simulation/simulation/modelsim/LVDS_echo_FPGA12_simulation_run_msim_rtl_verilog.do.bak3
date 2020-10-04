@@ -1,0 +1,47 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v}
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v}
+
+vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/testbench.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench.v
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,42 @@
+
+State Machine - |loop_back_verilog|next_state_rx
+Name next_state_rx.t7 next_state_rx.t6 next_state_rx.t5 next_state_rx.t4 next_state_rx.t3 next_state_rx.t2 next_state_rx.t1 next_state_rx.t0 
+next_state_rx.t0 0 0 0 0 0 0 0 0 
+next_state_rx.t1 0 0 0 0 0 0 1 1 
+next_state_rx.t2 0 0 0 0 0 1 0 1 
+next_state_rx.t3 0 0 0 0 1 0 0 1 
+next_state_rx.t4 0 0 0 1 0 0 0 1 
+next_state_rx.t5 0 0 1 0 0 0 0 1 
+next_state_rx.t6 0 1 0 0 0 0 0 1 
+next_state_rx.t7 1 0 0 0 0 0 0 1 
+
+State Machine - |loop_back_verilog|state_rx
+Name state_rx.t7 state_rx.t6 state_rx.t5 state_rx.t4 state_rx.t3 state_rx.t2 state_rx.t1 state_rx.t0 
+state_rx.t0 0 0 0 0 0 0 0 0 
+state_rx.t1 0 0 0 0 0 0 1 1 
+state_rx.t2 0 0 0 0 0 1 0 1 
+state_rx.t3 0 0 0 0 1 0 0 1 
+state_rx.t4 0 0 0 1 0 0 0 1 
+state_rx.t5 0 0 1 0 0 0 0 1 
+state_rx.t6 0 1 0 0 0 0 0 1 
+state_rx.t7 1 0 0 0 0 0 0 1 
+
+State Machine - |loop_back_verilog|next_state_tx
+Name next_state_tx.t6 next_state_tx.t5 next_state_tx.t4 next_state_tx.t3 next_state_tx.t2 next_state_tx.t1 next_state_tx.t0 
+next_state_tx.t0 0 0 0 0 0 0 0 
+next_state_tx.t1 0 0 0 0 0 1 1 
+next_state_tx.t2 0 0 0 0 1 0 1 
+next_state_tx.t3 0 0 0 1 0 0 1 
+next_state_tx.t4 0 0 1 0 0 0 1 
+next_state_tx.t5 0 1 0 0 0 0 1 
+next_state_tx.t6 1 0 0 0 0 0 1 
+
+State Machine - |loop_back_verilog|state_tx
+Name state_tx.t6 state_tx.t5 state_tx.t4 state_tx.t3 state_tx.t2 state_tx.t1 state_tx.t0 
+state_tx.t0 0 0 0 0 0 0 0 
+state_tx.t1 0 0 0 0 0 1 1 
+state_tx.t2 0 0 0 0 1 0 1 
+state_tx.t3 0 0 0 1 0 0 1 
+state_tx.t4 0 0 1 0 0 0 1 
+state_tx.t5 0 1 0 0 0 0 1 
+state_tx.t6 1 0 0 0 0 0 1 

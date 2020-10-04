@@ -1,0 +1,12 @@
+00:04:20 **** Clean-only build of configuration Nios II for project mysoft1_bsp ****
+make clean 
+[BSP clean complete]
+00:04:23 **** Clean-only build of configuration Nios II for project mysoft1 ****
+make clean 
+[mysoft1 clean complete]
+01:53:37 **** Clean-only build of configuration Nios II for project mysoft1_bsp ****
+make clean 
+[BSP clean complete]
+01:53:39 **** Clean-only build of configuration Nios II for project mysoft1 ****
+make clean 
+[mysoft1 clean complete]

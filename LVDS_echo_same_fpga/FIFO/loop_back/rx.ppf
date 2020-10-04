@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE pinplan>
+<pinplan intended_family="Cyclone IV E" variation_name="rx" megafunction_name="ALTLVDS_RX" specifies="all_ports">
+<global>
+<pin name="pll_areset" direction="input" scope="external"  />
+<pin name="rx_data_align" direction="input" scope="external"  />
+<pin name="rx_in[1..0]" direction="input" scope="external"  />
+<pin name="rx_inclock" direction="input" scope="external"  />
+<pin name="rx_locked" direction="output" scope="external"  />
+<pin name="rx_out[7..0]" direction="output" scope="external"  />
+<pin name="rx_outclock" direction="output" scope="external"  />
+
+</global>
+</pinplan>

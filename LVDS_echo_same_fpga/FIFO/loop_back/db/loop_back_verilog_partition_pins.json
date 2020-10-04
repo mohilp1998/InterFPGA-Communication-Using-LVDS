@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rx_align_done",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_out_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pll_areset_n",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_inclock",
+					"strict" : false
+				},
+				{
+					"name" : "tx_inclock",
+					"strict" : false
+				},
+				{
+					"name" : "tx_align_done",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

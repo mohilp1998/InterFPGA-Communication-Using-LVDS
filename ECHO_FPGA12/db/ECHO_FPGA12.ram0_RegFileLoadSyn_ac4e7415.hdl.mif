@@ -1,0 +1,38 @@
+-- begin_signature
+-- RegFileLoadSyn(file
+-- "customdb72c8b4c5f5588943c5ff029a85054c_8RTs_2VCs_8BD_25DW_SepIFRoundRobinAlloc_routing_13.hex"
+-- addr_width
+-- 32'b00000000000000000000000000000100
+-- data_width
+-- 32'b00000000000000000000000000000011
+-- lo
+-- 32'b00000000000000000000000000000000
+-- hi
+-- 32'b00000000000000000000000000001111
+-- binary
+-- 32'b00000000000000000000000000000000)
+-- end_signature
+WIDTH=3;
+DEPTH=16;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	15 :	100;
+	14 :	100;
+	13 :	011;
+	12 :	011;
+	11 :	100;
+	10 :	100;
+	9 :	100;
+	8 :	100;
+	7 :	011;
+	6 :	011;
+	5 :	011;
+	4 :	011;
+	3 :	000;
+	2 :	001;
+	1 :	010;
+	0 :	010;
+END;

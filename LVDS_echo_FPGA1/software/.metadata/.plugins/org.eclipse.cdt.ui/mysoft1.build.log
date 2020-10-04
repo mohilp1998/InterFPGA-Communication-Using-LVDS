@@ -1,0 +1,18 @@
+21:07:59 **** Incremental Build of configuration Nios II for project mysoft1 ****
+make all 
+Info: Building ../mysoft1_bsp/
+make --no-print-directory -C ../mysoft1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../mysoft1_bsp//HAL/inc -I../mysoft1_bsp/ -I../mysoft1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking mysoft1.elf
+nios2-elf-g++  -T'../mysoft1_bsp//linker.x' -msys-crt0='../mysoft1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../mysoft1_bsp/  -msmallc  -Wl,-Map=mysoft1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o mysoft1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert mysoft1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LVDS_echo_FPGA1_qsys --quartus_project_dir "/home/bhavin/MTP_work/LVDS/LVDS_echo_FPGA1" --sopcinfo /home/bhavin/MTP_work/LVDS/LVDS_echo_FPGA1/software/mysoft1_bsp/../../LVDS_echo_FPGA1_qsys.sopcinfo
+Info: (mysoft1.elf) 4920 Bytes program size (code + initialized data).
+Info:               26 KBytes free for stack + heap.
+Info: Creating mysoft1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source mysoft1.elf >mysoft1.objdump
+[mysoft1 build complete]
+
+21:07:59 Build Finished (took 469ms)
+

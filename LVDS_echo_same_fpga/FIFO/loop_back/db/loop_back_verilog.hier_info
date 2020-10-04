@@ -1,0 +1,881 @@
+|loop_back_verilog
+pll_areset_n => pll_areset_n.IN2
+tx_inclock => tx_inclock.IN2
+tx_out[0] <= tx:tx1.tx_out
+tx_out[1] <= tx:tx1.tx_out
+tx_outclock <= tx:tx1.tx_outclock
+tx_align_done => next_state_tx.DATAB
+tx_align_done => Selector1.IN3
+tx_align_done => Selector4.IN2
+tx_align_done => Selector0.IN1
+rx_in[0] => rx_in[0].IN1
+rx_in[1] => rx_in[1].IN1
+rx_inclock => rx_inclock.IN2
+rx_align_done <= align_done.DB_MAX_OUTPUT_PORT_TYPE
+rx_out_out[0] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[1] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[2] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[3] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[4] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[5] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[6] <= SizedFIFO:fifo_rx.D_OUT
+rx_out_out[7] <= SizedFIFO:fifo_rx.D_OUT
+
+
+|loop_back_verilog|tx:tx1
+pll_areset => pll_areset.IN1
+tx_in[0] => tx_in[0].IN1
+tx_in[1] => tx_in[1].IN1
+tx_in[2] => tx_in[2].IN1
+tx_in[3] => tx_in[3].IN1
+tx_in[4] => tx_in[4].IN1
+tx_in[5] => tx_in[5].IN1
+tx_in[6] => tx_in[6].IN1
+tx_in[7] => tx_in[7].IN1
+tx_inclock => tx_inclock.IN1
+tx_locked <= altlvds_tx:ALTLVDS_TX_component.tx_locked
+tx_out[0] <= altlvds_tx:ALTLVDS_TX_component.tx_out
+tx_out[1] <= altlvds_tx:ALTLVDS_TX_component.tx_out
+tx_outclock <= altlvds_tx:ALTLVDS_TX_component.tx_outclock
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component
+tx_in[0] => tx_lvds_tx:auto_generated.tx_in[0]
+tx_in[1] => tx_lvds_tx:auto_generated.tx_in[1]
+tx_in[2] => tx_lvds_tx:auto_generated.tx_in[2]
+tx_in[3] => tx_lvds_tx:auto_generated.tx_in[3]
+tx_in[4] => tx_lvds_tx:auto_generated.tx_in[4]
+tx_in[5] => tx_lvds_tx:auto_generated.tx_in[5]
+tx_in[6] => tx_lvds_tx:auto_generated.tx_in[6]
+tx_in[7] => tx_lvds_tx:auto_generated.tx_in[7]
+tx_inclock => tx_lvds_tx:auto_generated.tx_inclock
+tx_syncclock => ~NO_FANOUT~
+tx_enable => ~NO_FANOUT~
+sync_inclock => ~NO_FANOUT~
+tx_pll_enable => ~NO_FANOUT~
+pll_areset => tx_lvds_tx:auto_generated.pll_areset
+tx_data_reset => ~NO_FANOUT~
+tx_out[0] <= tx_lvds_tx:auto_generated.tx_out[0]
+tx_out[1] <= tx_lvds_tx:auto_generated.tx_out[1]
+tx_outclock <= tx_lvds_tx:auto_generated.tx_outclock
+tx_coreclock <= <GND>
+tx_locked <= tx_lvds_tx:auto_generated.tx_locked
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated
+pll_areset => w_reset.IN9
+tx_in[0] => tx_reg[0].DATAIN
+tx_in[1] => tx_reg[1].DATAIN
+tx_in[2] => tx_reg[2].DATAIN
+tx_in[3] => tx_reg[3].DATAIN
+tx_in[4] => tx_reg[4].DATAIN
+tx_in[5] => tx_reg[5].DATAIN
+tx_in[6] => tx_reg[6].DATAIN
+tx_in[7] => tx_reg[7].DATAIN
+tx_inclock => lvds_tx_pll.CLK
+tx_locked <= tx_locked.DB_MAX_OUTPUT_PORT_TYPE
+tx_out[0] <= tx_ddio_out:ddio_out.dataout
+tx_out[1] <= tx_ddio_out:ddio_out.dataout
+tx_outclock <= tx_ddio_out1:outclock_ddio.dataout
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out:ddio_out
+aclr => ddio_outa_0.ARESET
+aclr => ddio_outa_1.ARESET
+datain_h[0] => ddio_outa_0.DATAINHI
+datain_h[1] => ddio_outa_1.DATAINHI
+datain_l[0] => ddio_outa_0.DATAINLO
+datain_l[1] => ddio_outa_1.DATAINLO
+dataout[0] <= ddio_outa_0.DATAOUT
+dataout[1] <= ddio_outa_1.DATAOUT
+outclock => ddio_outa_0.CLKHI
+outclock => ddio_outa_0.CLKLO
+outclock => ddio_outa_0.MUXSEL
+outclock => ddio_outa_1.CLKHI
+outclock => ddio_outa_1.CLKLO
+outclock => ddio_outa_1.MUXSEL
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out1:outclock_ddio
+aclr => ddio_outa_0.ARESET
+datain_h[0] => ddio_outa_0.DATAINHI
+datain_l[0] => ddio_outa_0.DATAINLO
+dataout[0] <= ddio_outa_0.DATAOUT
+outclock => ddio_outa_0.CLKHI
+outclock => ddio_outa_0.CLKLO
+outclock => ddio_outa_0.MUXSEL
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cmpr:cmpr10
+aeb <= aneb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => aneb_result_wire[0].IN0
+datab[0] => aneb_result_wire[0].IN1
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cmpr:cmpr20
+aeb <= aneb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => aneb_result_wire[0].IN0
+datab[0] => aneb_result_wire[0].IN1
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cmpr:cmpr9
+aeb <= aneb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => aneb_result_wire[0].IN0
+datab[0] => aneb_result_wire[0].IN1
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cntr:cntr13
+aclr => counter_reg_bit[0].ACLR
+clock => counter_reg_bit[0].CLK
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+updown => ~NO_FANOUT~
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cntr:cntr2
+aclr => counter_reg_bit[0].ACLR
+clock => counter_reg_bit[0].CLK
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+updown => ~NO_FANOUT~
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg:outclk_shift
+aclr => shift_reg[0].ACLR
+aclr => shift_reg[1].ACLR
+aclr => shift_reg[2].ACLR
+aclr => shift_reg[3].ACLR
+clock => shift_reg[0].CLK
+clock => shift_reg[1].CLK
+clock => shift_reg[2].CLK
+clock => shift_reg[3].CLK
+data[0] => shift_reg.DATAB
+data[1] => shift_reg.DATAB
+data[2] => shift_reg.DATAB
+data[3] => shift_reg.DATAB
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shiftin => shift_reg.DATAA
+shiftout <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg23
+aclr => shift_reg[0].ACLR
+aclr => shift_reg[1].ACLR
+clock => shift_reg[0].CLK
+clock => shift_reg[1].CLK
+data[0] => shift_reg.DATAB
+data[1] => shift_reg.DATAB
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shiftin => shift_reg.DATAA
+shiftout <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg24
+aclr => shift_reg[0].ACLR
+aclr => shift_reg[1].ACLR
+clock => shift_reg[0].CLK
+clock => shift_reg[1].CLK
+data[0] => shift_reg.DATAB
+data[1] => shift_reg.DATAB
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shiftin => shift_reg.DATAA
+shiftout <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg25
+aclr => shift_reg[0].ACLR
+aclr => shift_reg[1].ACLR
+clock => shift_reg[0].CLK
+clock => shift_reg[1].CLK
+data[0] => shift_reg.DATAB
+data[1] => shift_reg.DATAB
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shiftin => shift_reg.DATAA
+shiftout <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg26
+aclr => shift_reg[0].ACLR
+aclr => shift_reg[1].ACLR
+clock => shift_reg[0].CLK
+clock => shift_reg[1].CLK
+data[0] => shift_reg.DATAB
+data[1] => shift_reg.DATAB
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shiftin => shift_reg.DATAA
+shiftout <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|rx:rx1
+pll_areset => pll_areset.IN1
+rx_data_align => rx_data_align.IN1
+rx_in[0] => rx_in[0].IN1
+rx_in[1] => rx_in[1].IN1
+rx_inclock => rx_inclock.IN1
+rx_locked <= altlvds_rx:ALTLVDS_RX_component.rx_locked
+rx_out[0] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[1] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[2] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[3] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[4] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[5] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[6] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_out[7] <= altlvds_rx:ALTLVDS_RX_component.rx_out
+rx_outclock <= altlvds_rx:ALTLVDS_RX_component.rx_outclock
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component
+rx_in[0] => rx_lvds_rx:auto_generated.rx_in[0]
+rx_in[1] => rx_lvds_rx:auto_generated.rx_in[1]
+rx_inclock => rx_lvds_rx:auto_generated.rx_inclock
+rx_syncclock => ~NO_FANOUT~
+rx_dpaclock => ~NO_FANOUT~
+rx_readclock => ~NO_FANOUT~
+rx_enable => ~NO_FANOUT~
+rx_deskew => ~NO_FANOUT~
+rx_pll_enable => ~NO_FANOUT~
+rx_data_align => rx_lvds_rx:auto_generated.rx_data_align
+rx_data_align_reset => ~NO_FANOUT~
+rx_reset[0] => ~NO_FANOUT~
+rx_reset[1] => ~NO_FANOUT~
+rx_dpll_reset[0] => ~NO_FANOUT~
+rx_dpll_reset[1] => ~NO_FANOUT~
+rx_dpll_hold[0] => ~NO_FANOUT~
+rx_dpll_hold[1] => ~NO_FANOUT~
+rx_dpll_enable[0] => ~NO_FANOUT~
+rx_dpll_enable[1] => ~NO_FANOUT~
+rx_fifo_reset[0] => ~NO_FANOUT~
+rx_fifo_reset[1] => ~NO_FANOUT~
+rx_channel_data_align[0] => ~NO_FANOUT~
+rx_channel_data_align[1] => ~NO_FANOUT~
+rx_cda_reset[0] => ~NO_FANOUT~
+rx_cda_reset[1] => ~NO_FANOUT~
+rx_coreclk[0] => ~NO_FANOUT~
+rx_coreclk[1] => ~NO_FANOUT~
+pll_areset => rx_lvds_rx:auto_generated.pll_areset
+rx_data_reset => ~NO_FANOUT~
+pll_phasedone => ~NO_FANOUT~
+rx_dpa_lock_reset[0] => ~NO_FANOUT~
+rx_dpa_lock_reset[1] => ~NO_FANOUT~
+dpa_pll_recal => ~NO_FANOUT~
+rx_out[0] <= rx_lvds_rx:auto_generated.rx_out[0]
+rx_out[1] <= rx_lvds_rx:auto_generated.rx_out[1]
+rx_out[2] <= rx_lvds_rx:auto_generated.rx_out[2]
+rx_out[3] <= rx_lvds_rx:auto_generated.rx_out[3]
+rx_out[4] <= rx_lvds_rx:auto_generated.rx_out[4]
+rx_out[5] <= rx_lvds_rx:auto_generated.rx_out[5]
+rx_out[6] <= rx_lvds_rx:auto_generated.rx_out[6]
+rx_out[7] <= rx_lvds_rx:auto_generated.rx_out[7]
+rx_outclock <= rx_lvds_rx:auto_generated.rx_outclock
+rx_locked <= rx_lvds_rx:auto_generated.rx_locked
+rx_dpa_locked[0] <= <GND>
+rx_dpa_locked[1] <= <GND>
+rx_cda_max[0] <= <GND>
+rx_cda_max[1] <= <GND>
+rx_divfwdclk[0] <= <GND>
+rx_divfwdclk[1] <= <GND>
+dpa_pll_cal_busy <= <GND>
+pll_phaseupdown <= <GND>
+pll_phasestep <= <GND>
+pll_phasecounterselect[0] <= <GND>
+pll_phasecounterselect[1] <= <GND>
+pll_phasecounterselect[2] <= <GND>
+pll_phasecounterselect[3] <= <GND>
+pll_scanclk <= <GND>
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated
+pll_areset => w_reset.IN1
+rx_data_align => rx_data_align_reg.DATAIN
+rx_in[0] => rx_in[0].IN1
+rx_in[1] => rx_in[1].IN1
+rx_inclock => lvds_rx_pll.CLK
+rx_locked <= rx_locked.DB_MAX_OUTPUT_PORT_TYPE
+rx_out[0] <= rx_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[1] <= rx_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[2] <= rx_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[3] <= rx_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[4] <= rx_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[5] <= rx_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[6] <= rx_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+rx_out[7] <= rx_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+rx_outclock <= lvds_rx_pll.CLK1
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in
+aclr => ddio_l_reg[0].ACLR
+aclr => ddio_l_reg[1].ACLR
+aclr => ddio_h_reg[0].ACLR
+aclr => ddio_h_reg[1].ACLR
+aclr => dataout_l_reg[0].ACLR
+aclr => dataout_l_reg[1].ACLR
+aclr => dataout_l_latch[0].ACLR
+aclr => dataout_l_latch[1].ACLR
+aclr => dataout_h_reg[0].ACLR
+aclr => dataout_h_reg[1].ACLR
+clock => ddio_h_reg[0].CLK
+clock => ddio_h_reg[1].CLK
+clock => dataout_l_reg[0].CLK
+clock => dataout_l_reg[1].CLK
+clock => dataout_h_reg[0].CLK
+clock => dataout_h_reg[1].CLK
+clock => dataout_l_latch[0].CLK
+clock => dataout_l_latch[1].CLK
+clock => ddio_l_reg[0].CLK
+clock => ddio_l_reg[1].CLK
+datain[0] => ddio_l_reg[0].DATAIN
+datain[0] => ddio_h_reg[0].DATAIN
+datain[1] => ddio_l_reg[1].DATAIN
+datain[1] => ddio_h_reg[1].DATAIN
+dataout_h[0] <= dataout_l_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout_h[1] <= dataout_l_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout_l[0] <= dataout_h_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout_l[1] <= dataout_h_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:h_dffpipe
+clock => dffe13a[0].CLK
+clock => dffe13a[1].CLK
+clrn => dffe13a[0].ACLR
+clrn => dffe13a[1].ACLR
+d[0] => dffe13a[0].DATAIN
+d[1] => dffe13a[1].DATAIN
+q[0] <= dffe13a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe13a[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:l_dffpipe
+clock => dffe13a[0].CLK
+clock => dffe13a[1].CLK
+clrn => dffe13a[0].ACLR
+clrn => dffe13a[1].ACLR
+d[0] => dffe13a[0].DATAIN
+d[1] => dffe13a[1].DATAIN
+q[0] <= dffe13a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe13a[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_cntr:bitslip_cntr
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+cnt_en => counter_reg_bit[1].ENA
+cnt_en => counter_reg_bit[0].ENA
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:h_mux11a
+data[0] => result_node.IN0
+data[1] => result_node.IN0
+data[2] => result_node.IN0
+data[3] => result_node.IN0
+result[0] <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[1] => result_node.IN1
+sel[1] => result_node.IN1
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:h_mux5a
+data[0] => result_node.IN0
+data[1] => result_node.IN0
+data[2] => result_node.IN0
+data[3] => result_node.IN0
+result[0] <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[1] => result_node.IN1
+sel[1] => result_node.IN1
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:l_mux12a
+data[0] => result_node.IN0
+data[1] => result_node.IN0
+data[2] => result_node.IN0
+data[3] => result_node.IN0
+result[0] <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[1] => result_node.IN1
+sel[1] => result_node.IN1
+
+
+|loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:l_mux6a
+data[0] => result_node.IN0
+data[1] => result_node.IN0
+data[2] => result_node.IN0
+data[3] => result_node.IN0
+result[0] <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[0] => result_node.IN1
+sel[1] => result_node.IN1
+sel[1] => result_node.IN1
+
+
+|loop_back_verilog|SizedFIFO:fifo_tx
+CLK => arr.we_a.CLK
+CLK => arr.waddr_a[2].CLK
+CLK => arr.waddr_a[1].CLK
+CLK => arr.waddr_a[0].CLK
+CLK => arr.data_a[31].CLK
+CLK => arr.data_a[30].CLK
+CLK => arr.data_a[29].CLK
+CLK => arr.data_a[28].CLK
+CLK => arr.data_a[27].CLK
+CLK => arr.data_a[26].CLK
+CLK => arr.data_a[25].CLK
+CLK => arr.data_a[24].CLK
+CLK => arr.data_a[23].CLK
+CLK => arr.data_a[22].CLK
+CLK => arr.data_a[21].CLK
+CLK => arr.data_a[20].CLK
+CLK => arr.data_a[19].CLK
+CLK => arr.data_a[18].CLK
+CLK => arr.data_a[17].CLK
+CLK => arr.data_a[16].CLK
+CLK => arr.data_a[15].CLK
+CLK => arr.data_a[14].CLK
+CLK => arr.data_a[13].CLK
+CLK => arr.data_a[12].CLK
+CLK => arr.data_a[11].CLK
+CLK => arr.data_a[10].CLK
+CLK => arr.data_a[9].CLK
+CLK => arr.data_a[8].CLK
+CLK => arr.data_a[7].CLK
+CLK => arr.data_a[6].CLK
+CLK => arr.data_a[5].CLK
+CLK => arr.data_a[4].CLK
+CLK => arr.data_a[3].CLK
+CLK => arr.data_a[2].CLK
+CLK => arr.data_a[1].CLK
+CLK => arr.data_a[0].CLK
+CLK => D_OUT[0]~reg0.CLK
+CLK => D_OUT[1]~reg0.CLK
+CLK => D_OUT[2]~reg0.CLK
+CLK => D_OUT[3]~reg0.CLK
+CLK => D_OUT[4]~reg0.CLK
+CLK => D_OUT[5]~reg0.CLK
+CLK => D_OUT[6]~reg0.CLK
+CLK => D_OUT[7]~reg0.CLK
+CLK => D_OUT[8]~reg0.CLK
+CLK => D_OUT[9]~reg0.CLK
+CLK => D_OUT[10]~reg0.CLK
+CLK => D_OUT[11]~reg0.CLK
+CLK => D_OUT[12]~reg0.CLK
+CLK => D_OUT[13]~reg0.CLK
+CLK => D_OUT[14]~reg0.CLK
+CLK => D_OUT[15]~reg0.CLK
+CLK => D_OUT[16]~reg0.CLK
+CLK => D_OUT[17]~reg0.CLK
+CLK => D_OUT[18]~reg0.CLK
+CLK => D_OUT[19]~reg0.CLK
+CLK => D_OUT[20]~reg0.CLK
+CLK => D_OUT[21]~reg0.CLK
+CLK => D_OUT[22]~reg0.CLK
+CLK => D_OUT[23]~reg0.CLK
+CLK => D_OUT[24]~reg0.CLK
+CLK => D_OUT[25]~reg0.CLK
+CLK => D_OUT[26]~reg0.CLK
+CLK => D_OUT[27]~reg0.CLK
+CLK => D_OUT[28]~reg0.CLK
+CLK => D_OUT[29]~reg0.CLK
+CLK => D_OUT[30]~reg0.CLK
+CLK => D_OUT[31]~reg0.CLK
+CLK => hasodata.CLK
+CLK => not_ring_full.CLK
+CLK => ring_empty.CLK
+CLK => tail[0].CLK
+CLK => tail[1].CLK
+CLK => tail[2].CLK
+CLK => head[0].CLK
+CLK => head[1].CLK
+CLK => head[2].CLK
+CLK => arr.CLK0
+RST => head.OUTPUTSELECT
+RST => head.OUTPUTSELECT
+RST => head.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => ring_empty.OUTPUTSELECT
+RST => not_ring_full.OUTPUTSELECT
+RST => hasodata.OUTPUTSELECT
+D_IN[0] => Selector40.IN3
+D_IN[0] => arr.data_a[0].DATAIN
+D_IN[0] => arr.DATAIN
+D_IN[1] => Selector39.IN3
+D_IN[1] => arr.data_a[1].DATAIN
+D_IN[1] => arr.DATAIN1
+D_IN[2] => Selector38.IN3
+D_IN[2] => arr.data_a[2].DATAIN
+D_IN[2] => arr.DATAIN2
+D_IN[3] => Selector37.IN3
+D_IN[3] => arr.data_a[3].DATAIN
+D_IN[3] => arr.DATAIN3
+D_IN[4] => Selector36.IN3
+D_IN[4] => arr.data_a[4].DATAIN
+D_IN[4] => arr.DATAIN4
+D_IN[5] => Selector35.IN3
+D_IN[5] => arr.data_a[5].DATAIN
+D_IN[5] => arr.DATAIN5
+D_IN[6] => Selector34.IN3
+D_IN[6] => arr.data_a[6].DATAIN
+D_IN[6] => arr.DATAIN6
+D_IN[7] => Selector33.IN3
+D_IN[7] => arr.data_a[7].DATAIN
+D_IN[7] => arr.DATAIN7
+D_IN[8] => Selector32.IN3
+D_IN[8] => arr.data_a[8].DATAIN
+D_IN[8] => arr.DATAIN8
+D_IN[9] => Selector31.IN3
+D_IN[9] => arr.data_a[9].DATAIN
+D_IN[9] => arr.DATAIN9
+D_IN[10] => Selector30.IN3
+D_IN[10] => arr.data_a[10].DATAIN
+D_IN[10] => arr.DATAIN10
+D_IN[11] => Selector29.IN3
+D_IN[11] => arr.data_a[11].DATAIN
+D_IN[11] => arr.DATAIN11
+D_IN[12] => Selector28.IN3
+D_IN[12] => arr.data_a[12].DATAIN
+D_IN[12] => arr.DATAIN12
+D_IN[13] => Selector27.IN3
+D_IN[13] => arr.data_a[13].DATAIN
+D_IN[13] => arr.DATAIN13
+D_IN[14] => Selector26.IN3
+D_IN[14] => arr.data_a[14].DATAIN
+D_IN[14] => arr.DATAIN14
+D_IN[15] => Selector25.IN3
+D_IN[15] => arr.data_a[15].DATAIN
+D_IN[15] => arr.DATAIN15
+D_IN[16] => Selector24.IN3
+D_IN[16] => arr.data_a[16].DATAIN
+D_IN[16] => arr.DATAIN16
+D_IN[17] => Selector23.IN3
+D_IN[17] => arr.data_a[17].DATAIN
+D_IN[17] => arr.DATAIN17
+D_IN[18] => Selector22.IN3
+D_IN[18] => arr.data_a[18].DATAIN
+D_IN[18] => arr.DATAIN18
+D_IN[19] => Selector21.IN3
+D_IN[19] => arr.data_a[19].DATAIN
+D_IN[19] => arr.DATAIN19
+D_IN[20] => Selector20.IN3
+D_IN[20] => arr.data_a[20].DATAIN
+D_IN[20] => arr.DATAIN20
+D_IN[21] => Selector19.IN3
+D_IN[21] => arr.data_a[21].DATAIN
+D_IN[21] => arr.DATAIN21
+D_IN[22] => Selector18.IN3
+D_IN[22] => arr.data_a[22].DATAIN
+D_IN[22] => arr.DATAIN22
+D_IN[23] => Selector17.IN3
+D_IN[23] => arr.data_a[23].DATAIN
+D_IN[23] => arr.DATAIN23
+D_IN[24] => Selector16.IN3
+D_IN[24] => arr.data_a[24].DATAIN
+D_IN[24] => arr.DATAIN24
+D_IN[25] => Selector15.IN3
+D_IN[25] => arr.data_a[25].DATAIN
+D_IN[25] => arr.DATAIN25
+D_IN[26] => Selector14.IN3
+D_IN[26] => arr.data_a[26].DATAIN
+D_IN[26] => arr.DATAIN26
+D_IN[27] => Selector13.IN3
+D_IN[27] => arr.data_a[27].DATAIN
+D_IN[27] => arr.DATAIN27
+D_IN[28] => Selector12.IN3
+D_IN[28] => arr.data_a[28].DATAIN
+D_IN[28] => arr.DATAIN28
+D_IN[29] => Selector11.IN3
+D_IN[29] => arr.data_a[29].DATAIN
+D_IN[29] => arr.DATAIN29
+D_IN[30] => Selector10.IN3
+D_IN[30] => arr.data_a[30].DATAIN
+D_IN[30] => arr.DATAIN30
+D_IN[31] => Selector9.IN3
+D_IN[31] => arr.data_a[31].DATAIN
+D_IN[31] => arr.DATAIN31
+ENQ => Decoder0.IN1
+ENQ => always2.IN0
+FULL_N <= not_ring_full.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[0] <= D_OUT[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[1] <= D_OUT[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[2] <= D_OUT[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[3] <= D_OUT[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[4] <= D_OUT[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[5] <= D_OUT[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[6] <= D_OUT[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[7] <= D_OUT[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[8] <= D_OUT[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[9] <= D_OUT[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[10] <= D_OUT[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[11] <= D_OUT[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[12] <= D_OUT[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[13] <= D_OUT[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[14] <= D_OUT[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[15] <= D_OUT[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[16] <= D_OUT[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[17] <= D_OUT[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[18] <= D_OUT[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[19] <= D_OUT[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[20] <= D_OUT[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[21] <= D_OUT[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[22] <= D_OUT[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[23] <= D_OUT[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[24] <= D_OUT[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[25] <= D_OUT[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[26] <= D_OUT[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[27] <= D_OUT[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[28] <= D_OUT[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[29] <= D_OUT[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[30] <= D_OUT[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[31] <= D_OUT[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DEQ => Decoder0.IN2
+DEQ => always2.IN1
+DEQ => always2.IN1
+EMPTY_N <= hasodata.DB_MAX_OUTPUT_PORT_TYPE
+CLR => Decoder0.IN0
+CLR => always2.IN1
+
+
+|loop_back_verilog|SizedFIFO:fifo_rx
+CLK => arr.we_a.CLK
+CLK => arr.waddr_a[2].CLK
+CLK => arr.waddr_a[1].CLK
+CLK => arr.waddr_a[0].CLK
+CLK => arr.data_a[31].CLK
+CLK => arr.data_a[30].CLK
+CLK => arr.data_a[29].CLK
+CLK => arr.data_a[28].CLK
+CLK => arr.data_a[27].CLK
+CLK => arr.data_a[26].CLK
+CLK => arr.data_a[25].CLK
+CLK => arr.data_a[24].CLK
+CLK => arr.data_a[23].CLK
+CLK => arr.data_a[22].CLK
+CLK => arr.data_a[21].CLK
+CLK => arr.data_a[20].CLK
+CLK => arr.data_a[19].CLK
+CLK => arr.data_a[18].CLK
+CLK => arr.data_a[17].CLK
+CLK => arr.data_a[16].CLK
+CLK => arr.data_a[15].CLK
+CLK => arr.data_a[14].CLK
+CLK => arr.data_a[13].CLK
+CLK => arr.data_a[12].CLK
+CLK => arr.data_a[11].CLK
+CLK => arr.data_a[10].CLK
+CLK => arr.data_a[9].CLK
+CLK => arr.data_a[8].CLK
+CLK => arr.data_a[7].CLK
+CLK => arr.data_a[6].CLK
+CLK => arr.data_a[5].CLK
+CLK => arr.data_a[4].CLK
+CLK => arr.data_a[3].CLK
+CLK => arr.data_a[2].CLK
+CLK => arr.data_a[1].CLK
+CLK => arr.data_a[0].CLK
+CLK => D_OUT[0]~reg0.CLK
+CLK => D_OUT[1]~reg0.CLK
+CLK => D_OUT[2]~reg0.CLK
+CLK => D_OUT[3]~reg0.CLK
+CLK => D_OUT[4]~reg0.CLK
+CLK => D_OUT[5]~reg0.CLK
+CLK => D_OUT[6]~reg0.CLK
+CLK => D_OUT[7]~reg0.CLK
+CLK => D_OUT[8]~reg0.CLK
+CLK => D_OUT[9]~reg0.CLK
+CLK => D_OUT[10]~reg0.CLK
+CLK => D_OUT[11]~reg0.CLK
+CLK => D_OUT[12]~reg0.CLK
+CLK => D_OUT[13]~reg0.CLK
+CLK => D_OUT[14]~reg0.CLK
+CLK => D_OUT[15]~reg0.CLK
+CLK => D_OUT[16]~reg0.CLK
+CLK => D_OUT[17]~reg0.CLK
+CLK => D_OUT[18]~reg0.CLK
+CLK => D_OUT[19]~reg0.CLK
+CLK => D_OUT[20]~reg0.CLK
+CLK => D_OUT[21]~reg0.CLK
+CLK => D_OUT[22]~reg0.CLK
+CLK => D_OUT[23]~reg0.CLK
+CLK => D_OUT[24]~reg0.CLK
+CLK => D_OUT[25]~reg0.CLK
+CLK => D_OUT[26]~reg0.CLK
+CLK => D_OUT[27]~reg0.CLK
+CLK => D_OUT[28]~reg0.CLK
+CLK => D_OUT[29]~reg0.CLK
+CLK => D_OUT[30]~reg0.CLK
+CLK => D_OUT[31]~reg0.CLK
+CLK => hasodata.CLK
+CLK => not_ring_full.CLK
+CLK => ring_empty.CLK
+CLK => tail[0].CLK
+CLK => tail[1].CLK
+CLK => tail[2].CLK
+CLK => head[0].CLK
+CLK => head[1].CLK
+CLK => head[2].CLK
+CLK => arr.CLK0
+RST => head.OUTPUTSELECT
+RST => head.OUTPUTSELECT
+RST => head.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => tail.OUTPUTSELECT
+RST => ring_empty.OUTPUTSELECT
+RST => not_ring_full.OUTPUTSELECT
+RST => hasodata.OUTPUTSELECT
+D_IN[0] => Selector40.IN3
+D_IN[0] => arr.data_a[0].DATAIN
+D_IN[0] => arr.DATAIN
+D_IN[1] => Selector39.IN3
+D_IN[1] => arr.data_a[1].DATAIN
+D_IN[1] => arr.DATAIN1
+D_IN[2] => Selector38.IN3
+D_IN[2] => arr.data_a[2].DATAIN
+D_IN[2] => arr.DATAIN2
+D_IN[3] => Selector37.IN3
+D_IN[3] => arr.data_a[3].DATAIN
+D_IN[3] => arr.DATAIN3
+D_IN[4] => Selector36.IN3
+D_IN[4] => arr.data_a[4].DATAIN
+D_IN[4] => arr.DATAIN4
+D_IN[5] => Selector35.IN3
+D_IN[5] => arr.data_a[5].DATAIN
+D_IN[5] => arr.DATAIN5
+D_IN[6] => Selector34.IN3
+D_IN[6] => arr.data_a[6].DATAIN
+D_IN[6] => arr.DATAIN6
+D_IN[7] => Selector33.IN3
+D_IN[7] => arr.data_a[7].DATAIN
+D_IN[7] => arr.DATAIN7
+D_IN[8] => Selector32.IN3
+D_IN[8] => arr.data_a[8].DATAIN
+D_IN[8] => arr.DATAIN8
+D_IN[9] => Selector31.IN3
+D_IN[9] => arr.data_a[9].DATAIN
+D_IN[9] => arr.DATAIN9
+D_IN[10] => Selector30.IN3
+D_IN[10] => arr.data_a[10].DATAIN
+D_IN[10] => arr.DATAIN10
+D_IN[11] => Selector29.IN3
+D_IN[11] => arr.data_a[11].DATAIN
+D_IN[11] => arr.DATAIN11
+D_IN[12] => Selector28.IN3
+D_IN[12] => arr.data_a[12].DATAIN
+D_IN[12] => arr.DATAIN12
+D_IN[13] => Selector27.IN3
+D_IN[13] => arr.data_a[13].DATAIN
+D_IN[13] => arr.DATAIN13
+D_IN[14] => Selector26.IN3
+D_IN[14] => arr.data_a[14].DATAIN
+D_IN[14] => arr.DATAIN14
+D_IN[15] => Selector25.IN3
+D_IN[15] => arr.data_a[15].DATAIN
+D_IN[15] => arr.DATAIN15
+D_IN[16] => Selector24.IN3
+D_IN[16] => arr.data_a[16].DATAIN
+D_IN[16] => arr.DATAIN16
+D_IN[17] => Selector23.IN3
+D_IN[17] => arr.data_a[17].DATAIN
+D_IN[17] => arr.DATAIN17
+D_IN[18] => Selector22.IN3
+D_IN[18] => arr.data_a[18].DATAIN
+D_IN[18] => arr.DATAIN18
+D_IN[19] => Selector21.IN3
+D_IN[19] => arr.data_a[19].DATAIN
+D_IN[19] => arr.DATAIN19
+D_IN[20] => Selector20.IN3
+D_IN[20] => arr.data_a[20].DATAIN
+D_IN[20] => arr.DATAIN20
+D_IN[21] => Selector19.IN3
+D_IN[21] => arr.data_a[21].DATAIN
+D_IN[21] => arr.DATAIN21
+D_IN[22] => Selector18.IN3
+D_IN[22] => arr.data_a[22].DATAIN
+D_IN[22] => arr.DATAIN22
+D_IN[23] => Selector17.IN3
+D_IN[23] => arr.data_a[23].DATAIN
+D_IN[23] => arr.DATAIN23
+D_IN[24] => Selector16.IN3
+D_IN[24] => arr.data_a[24].DATAIN
+D_IN[24] => arr.DATAIN24
+D_IN[25] => Selector15.IN3
+D_IN[25] => arr.data_a[25].DATAIN
+D_IN[25] => arr.DATAIN25
+D_IN[26] => Selector14.IN3
+D_IN[26] => arr.data_a[26].DATAIN
+D_IN[26] => arr.DATAIN26
+D_IN[27] => Selector13.IN3
+D_IN[27] => arr.data_a[27].DATAIN
+D_IN[27] => arr.DATAIN27
+D_IN[28] => Selector12.IN3
+D_IN[28] => arr.data_a[28].DATAIN
+D_IN[28] => arr.DATAIN28
+D_IN[29] => Selector11.IN3
+D_IN[29] => arr.data_a[29].DATAIN
+D_IN[29] => arr.DATAIN29
+D_IN[30] => Selector10.IN3
+D_IN[30] => arr.data_a[30].DATAIN
+D_IN[30] => arr.DATAIN30
+D_IN[31] => Selector9.IN3
+D_IN[31] => arr.data_a[31].DATAIN
+D_IN[31] => arr.DATAIN31
+ENQ => Decoder0.IN1
+ENQ => always2.IN0
+FULL_N <= not_ring_full.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[0] <= D_OUT[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[1] <= D_OUT[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[2] <= D_OUT[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[3] <= D_OUT[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[4] <= D_OUT[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[5] <= D_OUT[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[6] <= D_OUT[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[7] <= D_OUT[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[8] <= D_OUT[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[9] <= D_OUT[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[10] <= D_OUT[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[11] <= D_OUT[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[12] <= D_OUT[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[13] <= D_OUT[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[14] <= D_OUT[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[15] <= D_OUT[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[16] <= D_OUT[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[17] <= D_OUT[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[18] <= D_OUT[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[19] <= D_OUT[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[20] <= D_OUT[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[21] <= D_OUT[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[22] <= D_OUT[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[23] <= D_OUT[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[24] <= D_OUT[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[25] <= D_OUT[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[26] <= D_OUT[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[27] <= D_OUT[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[28] <= D_OUT[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[29] <= D_OUT[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[30] <= D_OUT[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_OUT[31] <= D_OUT[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DEQ => Decoder0.IN2
+DEQ => always2.IN1
+DEQ => always2.IN1
+EMPTY_N <= hasodata.DB_MAX_OUTPUT_PORT_TYPE
+CLR => Decoder0.IN0
+CLR => always2.IN1
+
+

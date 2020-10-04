@@ -1,0 +1,35 @@
+
+State Machine - |echo_fpga12_qsys|echo_fpga12_qsys_nios2_gen2_0:nios2_gen2_0|echo_fpga12_qsys_nios2_gen2_0_cpu:cpu|echo_fpga12_qsys_nios2_gen2_0_cpu_nios2_oci:the_echo_fpga12_qsys_nios2_gen2_0_cpu_nios2_oci|echo_fpga12_qsys_nios2_gen2_0_cpu_debug_slave_wrapper:the_echo_fpga12_qsys_nios2_gen2_0_cpu_debug_slave_wrapper|echo_fpga12_qsys_nios2_gen2_0_cpu_debug_slave_tck:the_echo_fpga12_qsys_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |echo_fpga12_qsys|FPGA12_TopNiosInterface:echo_fpga12_component_0|mkMFpgaTop:T1|mkTop_fpga2:xfpga2|mkNodeTask_echo2:nodes_6|core_state_mkFSMstate
+Name core_state_mkFSMstate.1010 core_state_mkFSMstate.1000 core_state_mkFSMstate.0111 core_state_mkFSMstate.0110 core_state_mkFSMstate.0101 core_state_mkFSMstate.0100 core_state_mkFSMstate.0011 core_state_mkFSMstate.0010 core_state_mkFSMstate.0001 core_state_mkFSMstate.0000 
+core_state_mkFSMstate.0000 0 0 0 0 0 0 0 0 0 0 
+core_state_mkFSMstate.0001 0 0 0 0 0 0 0 0 1 1 
+core_state_mkFSMstate.0010 0 0 0 0 0 0 0 1 0 1 
+core_state_mkFSMstate.0011 0 0 0 0 0 0 1 0 0 1 
+core_state_mkFSMstate.0100 0 0 0 0 0 1 0 0 0 1 
+core_state_mkFSMstate.0101 0 0 0 0 1 0 0 0 0 1 
+core_state_mkFSMstate.0110 0 0 0 1 0 0 0 0 0 1 
+core_state_mkFSMstate.0111 0 0 1 0 0 0 0 0 0 1 
+core_state_mkFSMstate.1000 0 1 0 0 0 0 0 0 0 1 
+core_state_mkFSMstate.1010 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |echo_fpga12_qsys|FPGA12_TopNiosInterface:echo_fpga12_component_0|mkMFpgaTop:T1|mkTop_fpga1:xfpga1|mkNodeTask_echo1:nodes_1|core_state_mkFSMstate
+Name core_state_mkFSMstate.1010 core_state_mkFSMstate.1000 core_state_mkFSMstate.0111 core_state_mkFSMstate.0110 core_state_mkFSMstate.0101 core_state_mkFSMstate.0100 core_state_mkFSMstate.0011 core_state_mkFSMstate.0010 core_state_mkFSMstate.0001 core_state_mkFSMstate.0000 
+core_state_mkFSMstate.0000 0 0 0 0 0 0 0 0 0 0 
+core_state_mkFSMstate.0001 0 0 0 0 0 0 0 0 1 1 
+core_state_mkFSMstate.0010 0 0 0 0 0 0 0 1 0 1 
+core_state_mkFSMstate.0011 0 0 0 0 0 0 1 0 0 1 
+core_state_mkFSMstate.0100 0 0 0 0 0 1 0 0 0 1 
+core_state_mkFSMstate.0101 0 0 0 0 1 0 0 0 0 1 
+core_state_mkFSMstate.0110 0 0 0 1 0 0 0 0 0 1 
+core_state_mkFSMstate.0111 0 0 1 0 0 0 0 0 0 1 
+core_state_mkFSMstate.1000 0 1 0 0 0 0 0 0 0 1 
+core_state_mkFSMstate.1010 1 0 0 0 0 0 0 0 0 1 

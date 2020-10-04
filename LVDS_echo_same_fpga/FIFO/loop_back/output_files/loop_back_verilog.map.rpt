@@ -1,0 +1,1052 @@
+Analysis & Synthesis report for loop_back_verilog
+Mon Jun 18 17:39:41 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. State Machine - |loop_back_verilog|next_state_rx
+ 10. State Machine - |loop_back_verilog|state_rx
+ 11. State Machine - |loop_back_verilog|next_state_tx
+ 12. State Machine - |loop_back_verilog|state_tx
+ 13. Registers Protected by Synthesis
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated
+ 19. Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out:ddio_out
+ 20. Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out1:outclock_ddio
+ 21. Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component
+ 22. Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated
+ 23. Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in
+ 24. Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:h_dffpipe
+ 25. Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:l_dffpipe
+ 26. Parameter Settings for User Entity Instance: Top-level Entity: |loop_back_verilog
+ 27. Parameter Settings for User Entity Instance: tx:tx1|altlvds_tx:ALTLVDS_TX_component
+ 28. Parameter Settings for User Entity Instance: rx:rx1|altlvds_rx:ALTLVDS_RX_component
+ 29. Parameter Settings for User Entity Instance: SizedFIFO:fifo_tx
+ 30. Parameter Settings for User Entity Instance: SizedFIFO:fifo_rx
+ 31. Port Connectivity Checks: "SizedFIFO:fifo_rx"
+ 32. Port Connectivity Checks: "SizedFIFO:fifo_tx"
+ 33. Port Connectivity Checks: "rx:rx1"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jun 18 17:39:41 2018       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; loop_back_verilog                           ;
+; Top-level Entity Name              ; loop_back_verilog                           ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 334                                         ;
+;     Total combinational functions  ; 218                                         ;
+;     Dedicated logic registers      ; 240                                         ;
+; Total registers                    ; 246                                         ;
+; Total pins                         ; 18                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 2                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; loop_back_verilog  ; loop_back_verilog  ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; SizedFIFO.v                      ; yes             ; User Verilog HDL File        ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v                  ;         ;
+; loop_back_verilog.v              ; yes             ; User Verilog HDL File        ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v          ;         ;
+; tx.v                             ; yes             ; User Wizard-Generated File   ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v                         ;         ;
+; rx.v                             ; yes             ; User Wizard-Generated File   ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v                         ;         ;
+; altlvds_tx.tdf                   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altlvds_tx.tdf                 ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                 ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratix_pll.inc                ;         ;
+; stratix_lvds_transmitter.inc     ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratix_lvds_transmitter.inc   ;         ;
+; stratixii_lvds_transmitter.inc   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixii_lvds_transmitter.inc ;         ;
+; stratixgx_lvds_transmitter.inc   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixgx_lvds_transmitter.inc ;         ;
+; stratixgx_pll.inc                ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixgx_pll.inc              ;         ;
+; stratixii_clkctrl.inc            ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixii_clkctrl.inc          ;         ;
+; altddio_out.inc                  ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altddio_out.inc                ;         ;
+; db/tx_lvds_tx.v                  ; yes             ; Auto-Generated Megafunction  ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v              ;         ;
+; altlvds_rx.tdf                   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altlvds_rx.tdf                 ;         ;
+; stratix_lvds_receiver.inc        ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratix_lvds_receiver.inc      ;         ;
+; stratixgx_lvds_receiver.inc      ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixgx_lvds_receiver.inc    ;         ;
+; stratixii_lvds_receiver.inc      ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/stratixii_lvds_receiver.inc    ;         ;
+; altddio_in.inc                   ; yes             ; Megafunction                 ; /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altddio_in.inc                 ;         ;
+; db/rx_lvds_rx.v                  ; yes             ; Auto-Generated Megafunction  ; /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v              ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 334                ;
+;                                             ;                    ;
+; Total combinational functions               ; 218                ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 133                ;
+;     -- 3 input functions                    ; 38                 ;
+;     -- <=2 input functions                  ; 47                 ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 217                ;
+;     -- arithmetic mode                      ; 1                  ;
+;                                             ;                    ;
+; Total registers                             ; 246                ;
+;     -- Dedicated logic registers            ; 240                ;
+;     -- I/O registers                        ; 12                 ;
+;                                             ;                    ;
+; I/O pins                                    ; 18                 ;
+;                                             ;                    ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+;                                             ;                    ;
+; Total PLLs                                  ; 2                  ;
+;     -- PLLs                                 ; 2                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; pll_areset_n~input ;
+; Maximum fan-out                             ; 163                ;
+; Total fan-out                               ; 1498               ;
+; Average fan-out                             ; 3.00               ;
++---------------------------------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Entity Name       ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |loop_back_verilog                       ; 218 (101)         ; 240 (81)     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |loop_back_verilog                                                                                             ; loop_back_verilog ; work         ;
+;    |SizedFIFO:fifo_rx|                   ; 72 (72)           ; 73 (73)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|SizedFIFO:fifo_rx                                                                           ; SizedFIFO         ; work         ;
+;    |SizedFIFO:fifo_tx|                   ; 20 (20)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|SizedFIFO:fifo_tx                                                                           ; SizedFIFO         ; work         ;
+;    |rx:rx1|                              ; 9 (0)             ; 41 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1                                                                                      ; rx                ; work         ;
+;       |altlvds_rx:ALTLVDS_RX_component|  ; 9 (0)             ; 41 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component                                                      ; altlvds_rx        ; work         ;
+;          |rx_lvds_rx:auto_generated|     ; 9 (5)             ; 41 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated                            ; rx_lvds_rx        ; work         ;
+;             |rx_cntr:bitslip_cntr|       ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_cntr:bitslip_cntr       ; rx_cntr           ; work         ;
+;             |rx_dffpipe:h_dffpipe|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:h_dffpipe       ; rx_dffpipe        ; work         ;
+;             |rx_dffpipe:l_dffpipe|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:l_dffpipe       ; rx_dffpipe        ; work         ;
+;             |rx_lvds_ddio_in:ddio_in|    ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in    ; rx_lvds_ddio_in   ; work         ;
+;             |rx_mux:h_mux11a|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:h_mux11a            ; rx_mux            ; work         ;
+;             |rx_mux:l_mux6a|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:l_mux6a             ; rx_mux            ; work         ;
+;    |tx:tx1|                              ; 16 (0)            ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1                                                                                      ; tx                ; work         ;
+;       |altlvds_tx:ALTLVDS_TX_component|  ; 16 (0)            ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component                                                      ; altlvds_tx        ; work         ;
+;          |tx_lvds_tx:auto_generated|     ; 16 (4)            ; 34 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated                            ; tx_lvds_tx        ; work         ;
+;             |tx_cntr:cntr13|             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cntr:cntr13             ; tx_cntr           ; work         ;
+;             |tx_cntr:cntr2|              ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cntr:cntr2              ; tx_cntr           ; work         ;
+;             |tx_ddio_out1:outclock_ddio| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out1:outclock_ddio ; tx_ddio_out1      ; work         ;
+;             |tx_ddio_out:ddio_out|       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out:ddio_out       ; tx_ddio_out       ; work         ;
+;             |tx_shift_reg1:shift_reg23|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg23  ; tx_shift_reg1     ; work         ;
+;             |tx_shift_reg1:shift_reg24|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg24  ; tx_shift_reg1     ; work         ;
+;             |tx_shift_reg1:shift_reg25|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg25  ; tx_shift_reg1     ; work         ;
+;             |tx_shift_reg1:shift_reg26|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg26  ; tx_shift_reg1     ; work         ;
+;             |tx_shift_reg:outclk_shift|  ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |loop_back_verilog|tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg:outclk_shift  ; tx_shift_reg      ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                       ;
++--------+--------------+---------+--------------+--------------+---------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance           ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------+-----------------+
+; Altera ; ALTLVDS_RX   ; 16.0    ; N/A          ; N/A          ; |loop_back_verilog|rx:rx1 ; rx.v            ;
+; Altera ; ALTLVDS_TX   ; 16.0    ; N/A          ; N/A          ; |loop_back_verilog|tx:tx1 ; tx.v            ;
++--------+--------------+---------+--------------+--------------+---------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |loop_back_verilog|next_state_rx                                                                                                                         ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; next_state_rx.t7 ; next_state_rx.t6 ; next_state_rx.t5 ; next_state_rx.t4 ; next_state_rx.t3 ; next_state_rx.t2 ; next_state_rx.t1 ; next_state_rx.t0 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; next_state_rx.t0 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; next_state_rx.t1 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
+; next_state_rx.t2 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
+; next_state_rx.t3 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
+; next_state_rx.t4 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
+; next_state_rx.t5 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; next_state_rx.t6 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; next_state_rx.t7 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |loop_back_verilog|state_rx                                                                                 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; state_rx.t7 ; state_rx.t6 ; state_rx.t5 ; state_rx.t4 ; state_rx.t3 ; state_rx.t2 ; state_rx.t1 ; state_rx.t0 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; state_rx.t0 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; state_rx.t1 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; state_rx.t2 ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; state_rx.t3 ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; state_rx.t4 ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
+; state_rx.t5 ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state_rx.t6 ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state_rx.t7 ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |loop_back_verilog|next_state_tx                                                                                                      ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; next_state_tx.t6 ; next_state_tx.t5 ; next_state_tx.t4 ; next_state_tx.t3 ; next_state_tx.t2 ; next_state_tx.t1 ; next_state_tx.t0 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; next_state_tx.t0 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; next_state_tx.t1 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
+; next_state_tx.t2 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
+; next_state_tx.t3 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
+; next_state_tx.t4 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
+; next_state_tx.t5 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; next_state_tx.t6 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------+
+; State Machine - |loop_back_verilog|state_tx                                                                   ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; state_tx.t6 ; state_tx.t5 ; state_tx.t4 ; state_tx.t3 ; state_tx.t2 ; state_tx.t1 ; state_tx.t0 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; state_tx.t0 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; state_tx.t1 ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; state_tx.t2 ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; state_tx.t3 ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; state_tx.t4 ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
+; state_tx.t5 ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state_tx.t6 ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                                                                            ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                                                                               ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|ddio_l_reg[0]      ; yes                                                              ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|ddio_h_reg[1]      ; yes                                                              ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|ddio_h_reg[0]      ; yes                                                              ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|ddio_l_reg[1]      ; yes                                                              ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_h_reg[0]   ; no                                                               ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_l_reg[0]   ; no                                                               ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_l_reg[1]   ; no                                                               ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_h_reg[1]   ; no                                                               ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_l_latch[0] ; no                                                               ; yes                                        ;
+; rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in|dataout_l_latch[1] ; no                                                               ; yes                                        ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                  ;
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+; Register name                                                                                           ; Reason for Removal                                                                        ;
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+; tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg:outclk_shift|shift_reg[3] ; Stuck at GND due to stuck port data_in                                                    ;
+; d_in_rx[8..10]                                                                                          ; Lost fanout                                                                               ;
+; sub_1_rx[0..7]                                                                                          ; Lost fanout                                                                               ;
+; sub_2_rx[0..7]                                                                                          ; Lost fanout                                                                               ;
+; d_in_rx[0..7,11..23]                                                                                    ; Lost fanout                                                                               ;
+; tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|sync_dffe1a                            ; Merged with tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|sync_dffe12a ;
+; SizedFIFO:fifo_tx|D_OUT[12,18..21,25..30]                                                               ; Merged with SizedFIFO:fifo_tx|D_OUT[11]                                                   ;
+; sub_1_tx[3,5]                                                                                           ; Merged with sub_1_tx[2]                                                                   ;
+; sub_2_tx[3]                                                                                             ; Merged with sub_1_tx[2]                                                                   ;
+; sub_2_tx[4]                                                                                             ; Merged with sub_1_tx[4]                                                                   ;
+; SizedFIFO:fifo_tx|D_OUT[11]                                                                             ; Stuck at GND due to stuck port data_in                                                    ;
+; sub_1_tx[2]                                                                                             ; Stuck at GND due to stuck port data_in                                                    ;
+; next_state_rx~3                                                                                         ; Lost fanout                                                                               ;
+; next_state_rx~4                                                                                         ; Lost fanout                                                                               ;
+; next_state_rx~5                                                                                         ; Lost fanout                                                                               ;
+; state_rx~10                                                                                             ; Lost fanout                                                                               ;
+; state_rx~11                                                                                             ; Lost fanout                                                                               ;
+; state_rx~12                                                                                             ; Lost fanout                                                                               ;
+; next_state_tx~3                                                                                         ; Lost fanout                                                                               ;
+; next_state_tx~4                                                                                         ; Lost fanout                                                                               ;
+; next_state_tx~5                                                                                         ; Lost fanout                                                                               ;
+; state_tx~9                                                                                              ; Lost fanout                                                                               ;
+; state_tx~10                                                                                             ; Lost fanout                                                                               ;
+; state_tx~11                                                                                             ; Lost fanout                                                                               ;
+; SizedFIFO:fifo_tx|arr~59                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~39                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~19                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~79                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~99                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~119                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~139                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~38                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~58                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~18                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~78                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~98                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~118                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~138                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~42                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~22                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~2                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~62                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~82                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~102                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~122                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~30                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~50                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~10                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~70                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~90                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~110                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~130                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~43                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~23                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~3                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~63                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~83                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~103                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~123                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~26                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~46                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~6                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~66                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~86                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~106                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~126                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~52                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~32                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~12                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~72                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~92                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~112                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~132                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~36                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~56                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~16                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~76                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~96                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~116                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~136                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~47                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~27                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~7                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~67                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~87                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~107                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~127                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~33                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~53                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~13                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~73                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~93                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~113                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~133                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~57                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~37                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~17                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~77                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~97                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~117                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~137                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~20                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~40                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~0                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~60                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~80                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~100                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~120                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~48                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~28                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~8                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~68                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~88                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~108                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~128                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~34                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~54                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~14                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~74                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~94                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~114                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~134                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~41                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~21                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~1                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~61                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~81                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~101                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~121                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~29                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~49                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~9                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~69                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~89                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~109                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~129                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~55                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~35                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~15                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~75                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~95                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~115                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~135                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~24                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~44                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~4                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~64                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~84                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~104                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~124                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~45                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~25                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~5                                                                                 ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~65                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~85                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~105                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~125                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~31                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~51                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~11                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~71                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~91                                                                                ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~111                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|arr~131                                                                               ; Stuck at VCC due to stuck port data_in                                                    ;
+; SizedFIFO:fifo_tx|D_OUT[0,2,3,5,7,8,10,13,15,16,23,24]                                                  ; Merged with SizedFIFO:fifo_tx|D_OUT[31]                                                   ;
+; SizedFIFO:fifo_tx|D_OUT[1,4,9,14,17,22]                                                                 ; Merged with SizedFIFO:fifo_tx|D_OUT[6]                                                    ;
+; Total Number of Removed Registers = 229                                                                 ;                                                                                           ;
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                 ;
++---------------+--------------------+----------------------------------------+
+; Register name ; Reason for Removal ; Registers Removed due to This Register ;
++---------------+--------------------+----------------------------------------+
+; d_in_rx[10]   ; Lost Fanouts       ; sub_2_rx[2]                            ;
+; d_in_rx[9]    ; Lost Fanouts       ; sub_2_rx[1]                            ;
+; d_in_rx[8]    ; Lost Fanouts       ; sub_2_rx[0]                            ;
++---------------+--------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 240   ;
+; Number of registers using Synchronous Clear  ; 51    ;
+; Number of registers using Synchronous Load   ; 19    ;
+; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 96    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_tx|D_OUT[1]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_rx|head[2]   ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_tx|D_OUT[2]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_tx|head[0]   ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 8 LEs                ; 72 LEs                 ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_rx|D_OUT[31] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |loop_back_verilog|sub_1_tx[4]                 ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 3 LEs                ; 15 LEs                 ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_tx|tail[0]   ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 3 LEs                ; 30 LEs                 ; Yes        ; |loop_back_verilog|SizedFIFO:fifo_rx|tail[0]   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |loop_back_verilog|tx_in[1]                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated ;
++-----------------+-------+------+--------------------------------------------------------+
+; Assignment      ; Value ; From ; To                                                     ;
++-----------------+-------+------+--------------------------------------------------------+
+; AUTO_MERGE_PLLS ; OFF   ; -    ; lvds_tx_pll                                            ;
++-----------------+-------+------+--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out:ddio_out ;
++-----------------------------+---------+------+---------------------------------------------------------------+
+; Assignment                  ; Value   ; From ; To                                                            ;
++-----------------------------+---------+------+---------------------------------------------------------------+
+; SYNCHRONIZER_IDENTIFICATION ; OFF     ; -    ; -                                                             ;
+; ADV_NETLIST_OPT_ALLOWED     ; DEFAULT ; -    ; -                                                             ;
++-----------------------------+---------+------+---------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Source assignments for tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out1:outclock_ddio ;
++-----------------------------+---------+------+---------------------------------------------------------------------+
+; Assignment                  ; Value   ; From ; To                                                                  ;
++-----------------------------+---------+------+---------------------------------------------------------------------+
+; SYNCHRONIZER_IDENTIFICATION ; OFF     ; -    ; -                                                                   ;
+; ADV_NETLIST_OPT_ALLOWED     ; DEFAULT ; -    ; -                                                                   ;
++-----------------------------+---------+------+---------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component ;
++----------------------------+-------+------+-------------------+
+; Assignment                 ; Value ; From ; To                ;
++----------------------------+-------+------+-------------------+
+; REMOVE_DUPLICATE_REGISTERS ; OFF   ; -    ; -                 ;
++----------------------------+-------+------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated ;
++---------------------------------+-------+------+----------------------------------------+
+; Assignment                      ; Value ; From ; To                                     ;
++---------------------------------+-------+------+----------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                      ;
+; AUTO_MERGE_PLLS                 ; OFF   ; -    ; lvds_rx_pll                            ;
++---------------------------------+-------+------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in ;
++---------------------------+-------------+------+----------------------------------------------------------------+
+; Assignment                ; Value       ; From ; To                                                             ;
++---------------------------+-------------+------+----------------------------------------------------------------+
+; PLL_COMPENSATE            ; ON          ; -    ; ddio_h_reg*                                                    ;
+; ADV_NETLIST_OPT_ALLOWED   ; NEVER_ALLOW ; -    ; -                                                              ;
+; LVDS_RX_REGISTER          ; LOW         ; -    ; ddio_l_reg[0]                                                  ;
+; PRESERVE_REGISTER         ; ON          ; -    ; ddio_l_reg[0]                                                  ;
+; PRESERVE_FANOUT_FREE_NODE ; ON          ; -    ; ddio_l_reg[0]                                                  ;
+; LVDS_RX_REGISTER          ; HIGH        ; -    ; ddio_h_reg[1]                                                  ;
+; PRESERVE_REGISTER         ; ON          ; -    ; ddio_h_reg[1]                                                  ;
+; PRESERVE_FANOUT_FREE_NODE ; ON          ; -    ; ddio_h_reg[1]                                                  ;
+; LVDS_RX_REGISTER          ; HIGH        ; -    ; ddio_h_reg[0]                                                  ;
+; PRESERVE_REGISTER         ; ON          ; -    ; ddio_h_reg[0]                                                  ;
+; PRESERVE_FANOUT_FREE_NODE ; ON          ; -    ; ddio_h_reg[0]                                                  ;
+; LVDS_RX_REGISTER          ; LOW         ; -    ; ddio_l_reg[1]                                                  ;
+; PRESERVE_REGISTER         ; ON          ; -    ; ddio_l_reg[1]                                                  ;
+; PRESERVE_FANOUT_FREE_NODE ; ON          ; -    ; ddio_l_reg[1]                                                  ;
++---------------------------+-------------+------+----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:h_dffpipe ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                          ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                           ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Source assignments for rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:l_dffpipe ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                          ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                           ;
++---------------------------------+-------+------+-------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |loop_back_verilog ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; SIZE           ; 3     ; Signed Integer                                           ;
+; t0             ; 000   ; Unsigned Binary                                          ;
+; t1             ; 001   ; Unsigned Binary                                          ;
+; t2             ; 010   ; Unsigned Binary                                          ;
+; t3             ; 011   ; Unsigned Binary                                          ;
+; t4             ; 100   ; Unsigned Binary                                          ;
+; t5             ; 101   ; Unsigned Binary                                          ;
+; t6             ; 110   ; Unsigned Binary                                          ;
+; t7             ; 111   ; Unsigned Binary                                          ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tx:tx1|altlvds_tx:ALTLVDS_TX_component ;
++-----------------------------+--------------+----------------------------------------+
+; Parameter Name              ; Value        ; Type                                   ;
++-----------------------------+--------------+----------------------------------------+
+; AUTO_CARRY_CHAINS           ; ON           ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS        ; OFF          ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS         ; ON           ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS      ; OFF          ; IGNORE_CASCADE                         ;
+; NUMBER_OF_CHANNELS          ; 2            ; Signed Integer                         ;
+; DESERIALIZATION_FACTOR      ; 4            ; Signed Integer                         ;
+; REGISTERED_INPUT            ; TX_CORECLK   ; Untyped                                ;
+; MULTI_CLOCK                 ; OFF          ; Untyped                                ;
+; INCLOCK_PERIOD              ; 20000        ; Signed Integer                         ;
+; OUTCLOCK_DIVIDE_BY          ; 2            ; Signed Integer                         ;
+; INCLOCK_BOOST               ; 0            ; Signed Integer                         ;
+; CENTER_ALIGN_MSB            ; UNUSED       ; Untyped                                ;
+; INTENDED_DEVICE_FAMILY      ; Cyclone IV E ; Untyped                                ;
+; DEVICE_FAMILY               ; Cyclone IV E ; Untyped                                ;
+; OUTPUT_DATA_RATE            ; 200          ; Signed Integer                         ;
+; INCLOCK_DATA_ALIGNMENT      ; EDGE_ALIGNED ; Untyped                                ;
+; OUTCLOCK_ALIGNMENT          ; EDGE_ALIGNED ; Untyped                                ;
+; INCLOCK_PHASE_SHIFT         ; 0            ; Signed Integer                         ;
+; OUTCLOCK_PHASE_SHIFT        ; 0            ; Signed Integer                         ;
+; COMMON_RX_TX_PLL            ; OFF          ; Untyped                                ;
+; OUTCLOCK_RESOURCE           ; AUTO         ; Untyped                                ;
+; USE_EXTERNAL_PLL            ; OFF          ; Untyped                                ;
+; PREEMPHASIS_SETTING         ; 0            ; Signed Integer                         ;
+; VOD_SETTING                 ; 0            ; Signed Integer                         ;
+; DIFFERENTIAL_DRIVE          ; 0            ; Signed Integer                         ;
+; CORECLOCK_DIVIDE_BY         ; 2            ; Signed Integer                         ;
+; ENABLE_CLK_LATENCY          ; OFF          ; Untyped                                ;
+; OUTCLOCK_DUTY_CYCLE         ; 50           ; Signed Integer                         ;
+; PLL_BANDWIDTH_TYPE          ; AUTO         ; Untyped                                ;
+; IMPLEMENT_IN_LES            ; ON           ; Untyped                                ;
+; PLL_SELF_RESET_ON_LOSS_LOCK ; ON           ; Untyped                                ;
+; CBXI_PARAMETER              ; tx_lvds_tx   ; Untyped                                ;
++-----------------------------+--------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rx:rx1|altlvds_rx:ALTLVDS_RX_component ;
++--------------------------------------+--------------+-------------------------------+
+; Parameter Name                       ; Value        ; Type                          ;
++--------------------------------------+--------------+-------------------------------+
+; AUTO_CARRY_CHAINS                    ; ON           ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS                 ; OFF          ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS                  ; ON           ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS               ; OFF          ; IGNORE_CASCADE                ;
+; NUMBER_OF_CHANNELS                   ; 2            ; Signed Integer                ;
+; DESERIALIZATION_FACTOR               ; 4            ; Signed Integer                ;
+; REGISTERED_OUTPUT                    ; ON           ; Untyped                       ;
+; INCLOCK_PERIOD                       ; 20000        ; Signed Integer                ;
+; INCLOCK_BOOST                        ; 0            ; Signed Integer                ;
+; CDS_MODE                             ; UNUSED       ; Untyped                       ;
+; INTENDED_DEVICE_FAMILY               ; Cyclone IV E ; Untyped                       ;
+; DEVICE_FAMILY                        ; Cyclone IV E ; Untyped                       ;
+; PORT_RX_DATA_ALIGN                   ; PORT_USED    ; Untyped                       ;
+; INPUT_DATA_RATE                      ; 200          ; Signed Integer                ;
+; INCLOCK_DATA_ALIGNMENT               ; EDGE_ALIGNED ; Untyped                       ;
+; INCLOCK_PHASE_SHIFT                  ; 0            ; Signed Integer                ;
+; REGISTERED_DATA_ALIGN_INPUT          ; ON           ; Untyped                       ;
+; COMMON_RX_TX_PLL                     ; OFF          ; Untyped                       ;
+; ENABLE_DPA_MODE                      ; OFF          ; Untyped                       ;
+; ENABLE_DPA_FIFO                      ; ON           ; Untyped                       ;
+; USE_DPLL_RAWPERROR                   ; OFF          ; Untyped                       ;
+; USE_CORECLOCK_INPUT                  ; OFF          ; Untyped                       ;
+; DPLL_LOCK_COUNT                      ; 0            ; Signed Integer                ;
+; DPLL_LOCK_WINDOW                     ; 0            ; Signed Integer                ;
+; OUTCLOCK_RESOURCE                    ; AUTO         ; Untyped                       ;
+; RX_ALIGN_DATA_REG                    ; RISING_EDGE  ; Untyped                       ;
+; DATA_ALIGN_ROLLOVER                  ; 4            ; Signed Integer                ;
+; LOSE_LOCK_ON_ONE_CHANGE              ; OFF          ; Untyped                       ;
+; RESET_FIFO_AT_FIRST_LOCK             ; ON           ; Untyped                       ;
+; USE_EXTERNAL_PLL                     ; OFF          ; Untyped                       ;
+; IMPLEMENT_IN_LES                     ; ON           ; Untyped                       ;
+; BUFFER_IMPLEMENTATION                ; RAM          ; Untyped                       ;
+; DPA_INITIAL_PHASE_VALUE              ; 0            ; Signed Integer                ;
+; ENABLE_DPA_ALIGN_TO_RISING_EDGE_ONLY ; OFF          ; Untyped                       ;
+; ENABLE_DPA_INITIAL_PHASE_SELECTION   ; OFF          ; Untyped                       ;
+; ENABLE_SOFT_CDR_MODE                 ; OFF          ; Untyped                       ;
+; PLL_OPERATION_MODE                   ; NORMAL       ; Untyped                       ;
+; SIM_DPA_IS_NEGATIVE_PPM_DRIFT        ; OFF          ; Untyped                       ;
+; SIM_DPA_NET_PPM_VARIATION            ; 0            ; Signed Integer                ;
+; SIM_DPA_OUTPUT_CLOCK_PHASE_SHIFT     ; 0            ; Signed Integer                ;
+; USE_NO_PHASE_SHIFT                   ; ON           ; Untyped                       ;
+; PORT_RX_CHANNEL_DATA_ALIGN           ; PORT_UNUSED  ; Untyped                       ;
+; PLL_SELF_RESET_ON_LOSS_LOCK          ; ON           ; Untyped                       ;
+; X_ON_BITSLIP                         ; ON           ; Untyped                       ;
+; ENABLE_DPA_PLL_CALIBRATION           ; OFF          ; Untyped                       ;
+; CBXI_PARAMETER                       ; rx_lvds_rx   ; Untyped                       ;
++--------------------------------------+--------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SizedFIFO:fifo_tx      ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; p1width        ; 00000000000000000000000000100000 ; Unsigned Binary ;
+; p2depth        ; 00000000000000000000000000001000 ; Unsigned Binary ;
+; p3cntr_width   ; 00000000000000000000000000000011 ; Unsigned Binary ;
+; guarded        ; 00000000000000000000000000000001 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SizedFIFO:fifo_rx      ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; p1width        ; 00000000000000000000000000100000 ; Unsigned Binary ;
+; p2depth        ; 00000000000000000000000000001000 ; Unsigned Binary ;
+; p3cntr_width   ; 00000000000000000000000000000011 ; Unsigned Binary ;
+; guarded        ; 00000000000000000000000000000001 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SizedFIFO:fifo_rx"                                                                          ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; D_OUT[23..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SizedFIFO:fifo_tx"                                                                          ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; D_IN[24..22] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; D_IN[17..13] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; D_IN[10..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; D_IN[30..25] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; D_IN[21..18] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; D_IN[12..11] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; D_IN[31]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ENQ          ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; FULL_N       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rx:rx1"                                                                                    ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; rx_outclock ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 18                          ;
+; cycloneiii_ddio_out   ; 3                           ;
+; cycloneiii_ff         ; 240                         ;
+;     CLR               ; 56                          ;
+;     CLR SLD           ; 4                           ;
+;     ENA               ; 87                          ;
+;     ENA SCLR SLD      ; 1                           ;
+;     ENA SLD           ; 8                           ;
+;     SCLR              ; 49                          ;
+;     SCLR SLD          ; 1                           ;
+;     SLD               ; 5                           ;
+;     plain             ; 29                          ;
+; cycloneiii_lcell_comb ; 218                         ;
+;     arith             ; 1                           ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 217                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 40                          ;
+;         3 data inputs ; 38                          ;
+;         4 data inputs ; 133                         ;
+; cycloneiii_pll        ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.74                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Mon Jun 18 17:39:28 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off loop_back_verilog -c loop_back_verilog
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file SizedFIFO.v
+    Info (12023): Found entity 1: SizedFIFO File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v Line: 58
+Info (12021): Found 1 design units, including 1 entities, in source file loop_back_verilog.v
+    Info (12023): Found entity 1: loop_back_verilog File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tx.v
+    Info (12023): Found entity 1: tx File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file rx.v
+    Info (12023): Found entity 1: rx File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v Line: 40
+Info (12127): Elaborating entity "loop_back_verilog" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at loop_back_verilog.v(26): object "d_out_rx_dummy" assigned a value but never read File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v Line: 26
+Info (12128): Elaborating entity "tx" for hierarchy "tx:tx1" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v Line: 80
+Info (12128): Elaborating entity "altlvds_tx" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v Line: 74
+Info (12130): Elaborated megafunction instantiation "tx:tx1|altlvds_tx:ALTLVDS_TX_component" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v Line: 74
+Info (12133): Instantiated megafunction "tx:tx1|altlvds_tx:ALTLVDS_TX_component" with the following parameter: File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/tx.v Line: 74
+    Info (12134): Parameter "center_align_msb" = "UNUSED"
+    Info (12134): Parameter "common_rx_tx_pll" = "OFF"
+    Info (12134): Parameter "coreclock_divide_by" = "2"
+    Info (12134): Parameter "data_rate" = "200.0 Mbps"
+    Info (12134): Parameter "deserialization_factor" = "4"
+    Info (12134): Parameter "differential_drive" = "0"
+    Info (12134): Parameter "enable_clock_pin_mode" = "UNUSED"
+    Info (12134): Parameter "implement_in_les" = "ON"
+    Info (12134): Parameter "inclock_boost" = "0"
+    Info (12134): Parameter "inclock_data_alignment" = "EDGE_ALIGNED"
+    Info (12134): Parameter "inclock_period" = "20000"
+    Info (12134): Parameter "inclock_phase_shift" = "0"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=tx"
+    Info (12134): Parameter "lpm_type" = "altlvds_tx"
+    Info (12134): Parameter "multi_clock" = "OFF"
+    Info (12134): Parameter "number_of_channels" = "2"
+    Info (12134): Parameter "outclock_alignment" = "EDGE_ALIGNED"
+    Info (12134): Parameter "outclock_divide_by" = "2"
+    Info (12134): Parameter "outclock_duty_cycle" = "50"
+    Info (12134): Parameter "outclock_multiply_by" = "1"
+    Info (12134): Parameter "outclock_phase_shift" = "0"
+    Info (12134): Parameter "outclock_resource" = "AUTO"
+    Info (12134): Parameter "output_data_rate" = "200"
+    Info (12134): Parameter "pll_compensation_mode" = "AUTO"
+    Info (12134): Parameter "pll_self_reset_on_loss_lock" = "ON"
+    Info (12134): Parameter "preemphasis_setting" = "0"
+    Info (12134): Parameter "refclk_frequency" = "UNUSED"
+    Info (12134): Parameter "registered_input" = "TX_CORECLK"
+    Info (12134): Parameter "use_external_pll" = "OFF"
+    Info (12134): Parameter "use_no_phase_shift" = "ON"
+    Info (12134): Parameter "vod_setting" = "0"
+    Info (12134): Parameter "clk_src_is_pll" = "off"
+Info (12021): Found 7 design units, including 7 entities, in source file db/tx_lvds_tx.v
+    Info (12023): Found entity 1: tx_ddio_out File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 35
+    Info (12023): Found entity 2: tx_ddio_out1 File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 141
+    Info (12023): Found entity 3: tx_cmpr File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 208
+    Info (12023): Found entity 4: tx_cntr File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 250
+    Info (12023): Found entity 5: tx_shift_reg File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 334
+    Info (12023): Found entity 6: tx_shift_reg1 File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 384
+    Info (12023): Found entity 7: tx_lvds_tx File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 431
+Info (12128): Elaborating entity "tx_lvds_tx" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated" File: /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altlvds_tx.tdf Line: 263
+Warning (10036): Verilog HDL or VHDL warning at tx_lvds_tx.v(461): object "dffe19a" assigned a value but never read File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 461
+Info (12128): Elaborating entity "tx_ddio_out" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out:ddio_out" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 503
+Info (12128): Elaborating entity "tx_ddio_out1" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_ddio_out1:outclock_ddio" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 510
+Info (12128): Elaborating entity "tx_cmpr" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cmpr:cmpr10" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 627
+Info (12128): Elaborating entity "tx_cntr" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_cntr:cntr13" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 643
+Info (12128): Elaborating entity "tx_shift_reg" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg:outclk_shift" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 657
+Info (12128): Elaborating entity "tx_shift_reg1" for hierarchy "tx:tx1|altlvds_tx:ALTLVDS_TX_component|tx_lvds_tx:auto_generated|tx_shift_reg1:shift_reg23" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/tx_lvds_tx.v Line: 665
+Info (12128): Elaborating entity "rx" for hierarchy "rx:rx1" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v Line: 92
+Info (12128): Elaborating entity "altlvds_rx" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v Line: 98
+Info (12130): Elaborated megafunction instantiation "rx:rx1|altlvds_rx:ALTLVDS_RX_component" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v Line: 98
+Info (12133): Instantiated megafunction "rx:rx1|altlvds_rx:ALTLVDS_RX_component" with the following parameter: File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/rx.v Line: 98
+    Info (12134): Parameter "buffer_implementation" = "RAM"
+    Info (12134): Parameter "cds_mode" = "UNUSED"
+    Info (12134): Parameter "common_rx_tx_pll" = "OFF"
+    Info (12134): Parameter "data_align_rollover" = "4"
+    Info (12134): Parameter "data_rate" = "200.0 Mbps"
+    Info (12134): Parameter "deserialization_factor" = "4"
+    Info (12134): Parameter "dpa_initial_phase_value" = "0"
+    Info (12134): Parameter "dpll_lock_count" = "0"
+    Info (12134): Parameter "dpll_lock_window" = "0"
+    Info (12134): Parameter "enable_clock_pin_mode" = "UNUSED"
+    Info (12134): Parameter "enable_dpa_align_to_rising_edge_only" = "OFF"
+    Info (12134): Parameter "enable_dpa_calibration" = "ON"
+    Info (12134): Parameter "enable_dpa_fifo" = "UNUSED"
+    Info (12134): Parameter "enable_dpa_initial_phase_selection" = "OFF"
+    Info (12134): Parameter "enable_dpa_mode" = "OFF"
+    Info (12134): Parameter "enable_dpa_pll_calibration" = "OFF"
+    Info (12134): Parameter "enable_soft_cdr_mode" = "OFF"
+    Info (12134): Parameter "implement_in_les" = "ON"
+    Info (12134): Parameter "inclock_boost" = "0"
+    Info (12134): Parameter "inclock_data_alignment" = "EDGE_ALIGNED"
+    Info (12134): Parameter "inclock_period" = "20000"
+    Info (12134): Parameter "inclock_phase_shift" = "0"
+    Info (12134): Parameter "input_data_rate" = "200"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lose_lock_on_one_change" = "UNUSED"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=rx"
+    Info (12134): Parameter "lpm_type" = "altlvds_rx"
+    Info (12134): Parameter "number_of_channels" = "2"
+    Info (12134): Parameter "outclock_resource" = "AUTO"
+    Info (12134): Parameter "pll_operation_mode" = "UNUSED"
+    Info (12134): Parameter "pll_self_reset_on_loss_lock" = "ON"
+    Info (12134): Parameter "port_rx_channel_data_align" = "PORT_UNUSED"
+    Info (12134): Parameter "port_rx_data_align" = "PORT_USED"
+    Info (12134): Parameter "refclk_frequency" = "UNUSED"
+    Info (12134): Parameter "registered_data_align_input" = "UNUSED"
+    Info (12134): Parameter "registered_output" = "ON"
+    Info (12134): Parameter "reset_fifo_at_first_lock" = "UNUSED"
+    Info (12134): Parameter "rx_align_data_reg" = "UNUSED"
+    Info (12134): Parameter "sim_dpa_is_negative_ppm_drift" = "OFF"
+    Info (12134): Parameter "sim_dpa_net_ppm_variation" = "0"
+    Info (12134): Parameter "sim_dpa_output_clock_phase_shift" = "0"
+    Info (12134): Parameter "use_coreclock_input" = "OFF"
+    Info (12134): Parameter "use_dpll_rawperror" = "OFF"
+    Info (12134): Parameter "use_external_pll" = "OFF"
+    Info (12134): Parameter "use_no_phase_shift" = "ON"
+    Info (12134): Parameter "x_on_bitslip" = "ON"
+    Info (12134): Parameter "clk_src_is_pll" = "off"
+Info (12021): Found 5 design units, including 5 entities, in source file db/rx_lvds_rx.v
+    Info (12023): Found entity 1: rx_lvds_ddio_in File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 35
+    Info (12023): Found entity 2: rx_dffpipe File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 112
+    Info (12023): Found entity 3: rx_cntr File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 159
+    Info (12023): Found entity 4: rx_mux File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 268
+    Info (12023): Found entity 5: rx_lvds_rx File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 301
+Info (12128): Elaborating entity "rx_lvds_rx" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated" File: /home/mohil/altera_lite/16.0/quartus/libraries/megafunctions/altlvds_rx.tdf Line: 256
+Info (12128): Elaborating entity "rx_lvds_ddio_in" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_lvds_ddio_in:ddio_in" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 369
+Info (12128): Elaborating entity "rx_dffpipe" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_dffpipe:h_dffpipe" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 457
+Info (12128): Elaborating entity "rx_cntr" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_cntr:bitslip_cntr" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 468
+Info (12128): Elaborating entity "rx_mux" for hierarchy "rx:rx1|altlvds_rx:ALTLVDS_RX_component|rx_lvds_rx:auto_generated|rx_mux:h_mux11a" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/db/rx_lvds_rx.v Line: 473
+Info (12128): Elaborating entity "SizedFIFO" for hierarchy "SizedFIFO:fifo_tx" File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/loop_back_verilog.v Line: 106
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276004): RAM logic "SizedFIFO:fifo_rx|arr" is uninferred due to inappropriate RAM size File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v Line: 88
+    Info (276004): RAM logic "SizedFIFO:fifo_tx|arr" is uninferred due to inappropriate RAM size File: /home/mohil/Desktop/Summer_Project/LVDS_Project/FIFO/loop_back/SizedFIFO.v Line: 88
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 52 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 11 node(s), including 3 DDIO, 2 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 360 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 337 logic cells
+    Info (21065): Implemented 2 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 1297 megabytes
+    Info: Processing ended: Mon Jun 18 17:39:41 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:32
+
+

@@ -1,0 +1,57 @@
+vsim work.mkMFpgaTop
+# vsim work.mkMFpgaTop 
+# Start time: 19:25:40 on Jun 21,2018
+# ** Error: (vsim-3170) Could not find '/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/work.mkMFpgaTop'.
+# Error loading design
+# End time: 19:25:41 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim rtl_work.mkMFpgaTop
+# vsim rtl_work.mkMFpgaTop 
+# Start time: 19:26:59 on Jun 21,2018
+# Loading rtl_work.mkMFpgaTop
+# Loading rtl_work.mkTop_fpga1
+# Loading rtl_work.SizedFIFO
+# Loading rtl_work.mkNetworkSimple1
+# Loading rtl_work.RegFileLoadSyn
+# Loading rtl_work.mkIQRouterCoreSimple
+# Loading rtl_work.mkInputQueue
+# Loading rtl_work.RegFile_1port
+# Loading rtl_work.mkOutPortFIFO
+# Loading rtl_work.mkSepRouterAllocator
+# Loading rtl_work.mkRouterInputArbitersRoundRobin
+# Loading rtl_work.module_gen_grant_carry
+# Loading rtl_work.mkRouterOutputArbitersRoundRobin
+# Loading rtl_work.module_outport_encoder
+# Loading rtl_work.mkNodeTask_host
+# Loading rtl_work.mkCnctBridge
+# Loading rtl_work.FIFO2
+# Loading rtl_work.mkNodeTask_echo1
+# Loading rtl_work.mkNodeTask_fpga1_4
+# Loading rtl_work.mkInterFPGA_LVDS
+# Loading rtl_work.SyncFIFO
+# Loading rtl_work.mkTop_fpga2
+# Loading rtl_work.mkNetworkSimple2
+# Loading rtl_work.mkNodeTask_fpga2_5
+# Loading rtl_work.mkNodeTask_echo2
+# Loading rtl_work.LVDS_fpga
+# Loading rtl_work.tx
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v(62): Instantiation of 'altlvds_tx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mkMFpgaTop/fpga1/tx1 File: /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/rtl_work
+# Loading rtl_work.rx
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v(64): Instantiation of 'altlvds_rx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mkMFpgaTop/fpga1/rx1 File: /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v(62): Instantiation of 'altlvds_tx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mkMFpgaTop/fpga2/tx1 File: /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v(64): Instantiation of 'altlvds_rx' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mkMFpgaTop/fpga2/rx1 File: /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v
+#         Searched libraries:
+#             /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 19:26:59 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0

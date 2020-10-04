@@ -1,0 +1,167 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 816 376)
+	(text "LVDS_echo_FPGA12_qsys" (rect 326 -1 445 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 360 20 372)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 352 72)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga1" (rect 0 0 273 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga1" (rect 4 149 364 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 352 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga1[1..0]" (rect 0 0 258 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga1[1..0]" (rect 4 165 352 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 352 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga1" (rect 0 0 259 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga1" (rect 4 181 346 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 352 192)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga2" (rect 0 0 274 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_align_done_fpga2" (rect 4 229 364 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 352 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga2[1..0]" (rect 0 0 259 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_in_fpga2[1..0]" (rect 4 245 352 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 352 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga2" (rect 0 0 260 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_inclock_fpga2" (rect 4 261 346 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 352 272)(line_width 1))
+	)
+	(port
+		(pt 0 344)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 333 82 344)(font "Arial" (font_size 8)))
+		(line (pt 0 344)(pt 352 344)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga1[1..0]" (rect 0 0 263 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga1[1..0]" (rect 4 101 358 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 352 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga1" (rect 0 0 264 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga1" (rect 4 117 352 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 352 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga2" (rect 0 0 265 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_outclock_fpga2" (rect 4 133 352 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 352 144)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga1" (rect 0 0 274 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga1" (rect 4 197 364 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 352 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga2[1..0]" (rect 0 0 264 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_tx_out_fpga2[1..0]" (rect 4 213 358 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 352 224)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga2" (rect 0 0 276 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_rx_align_done_fpga2" (rect 4 277 364 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 352 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(output)
+		(text "lvds_echo_fpga12_component_0_conduit_end_led_out[7..0]" (rect 0 0 240 12)(font "Arial" (font_size 8)))
+		(text "lvds_echo_fpga12_component_0_conduit_end_led_out[7..0]" (rect 4 293 328 304)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 352 304)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 337 43 692 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 357 67 732 144)(font "Arial" (color 0 0 0)))
+		(text "lvds_echo_fpga12_component_0_conduit_end" (rect 85 83 410 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "tx_out_fpga1" (rect 357 107 786 224)(font "Arial" (color 0 0 0)))
+		(text "tx_outclock_fpga1" (rect 357 123 816 256)(font "Arial" (color 0 0 0)))
+		(text "tx_outclock_fpga2" (rect 357 139 816 288)(font "Arial" (color 0 0 0)))
+		(text "tx_align_done_fpga1" (rect 357 155 828 320)(font "Arial" (color 0 0 0)))
+		(text "rx_in_fpga1" (rect 357 171 780 352)(font "Arial" (color 0 0 0)))
+		(text "rx_inclock_fpga1" (rect 357 187 810 384)(font "Arial" (color 0 0 0)))
+		(text "rx_align_done_fpga1" (rect 357 203 828 416)(font "Arial" (color 0 0 0)))
+		(text "tx_out_fpga2" (rect 357 219 786 448)(font "Arial" (color 0 0 0)))
+		(text "tx_align_done_fpga2" (rect 357 235 828 480)(font "Arial" (color 0 0 0)))
+		(text "rx_in_fpga2" (rect 357 251 780 512)(font "Arial" (color 0 0 0)))
+		(text "rx_inclock_fpga2" (rect 357 267 810 544)(font "Arial" (color 0 0 0)))
+		(text "rx_align_done_fpga2" (rect 357 283 828 576)(font "Arial" (color 0 0 0)))
+		(text "led_out" (rect 357 299 756 608)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 323 315 676 643)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 357 339 756 688)(font "Arial" (color 0 0 0)))
+		(text " LVDS_echo_FPGA12_qsys " (rect 691 360 1520 730)(font "Arial" ))
+		(line (pt 352 32)(pt 464 32)(line_width 1))
+		(line (pt 464 32)(pt 464 360)(line_width 1))
+		(line (pt 352 360)(pt 464 360)(line_width 1))
+		(line (pt 352 32)(pt 352 360)(line_width 1))
+		(line (pt 353 52)(pt 353 76)(line_width 1))
+		(line (pt 354 52)(pt 354 76)(line_width 1))
+		(line (pt 353 92)(pt 353 308)(line_width 1))
+		(line (pt 354 92)(pt 354 308)(line_width 1))
+		(line (pt 353 324)(pt 353 348)(line_width 1))
+		(line (pt 354 324)(pt 354 348)(line_width 1))
+		(line (pt 0 0)(pt 816 0)(line_width 1))
+		(line (pt 816 0)(pt 816 376)(line_width 1))
+		(line (pt 0 376)(pt 816 376)(line_width 1))
+		(line (pt 0 0)(pt 0 376)(line_width 1))
+	)
+)

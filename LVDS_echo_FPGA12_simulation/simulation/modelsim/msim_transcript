@@ -1,0 +1,1386 @@
+# do LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/mohil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v 
+# -- Compiling module FIFO10
+# 
+# Top level modules:
+# 	FIFO10
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v 
+# -- Compiling module rx
+# 
+# Top level modules:
+# 	rx
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v 
+# -- Compiling module RegFileLoadSyn
+# 
+# Top level modules:
+# 	RegFileLoadSyn
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v 
+# -- Compiling module LVDS_fpga
+# 
+# Top level modules:
+# 	LVDS_fpga
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v 
+# -- Compiling module tx
+# 
+# Top level modules:
+# 	tx
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v 
+# -- Compiling module tx_ddio_out
+# -- Compiling module tx_ddio_out1
+# -- Compiling module tx_cmpr
+# -- Compiling module tx_cntr
+# -- Compiling module tx_shift_reg
+# -- Compiling module tx_shift_reg1
+# -- Compiling module tx_lvds_tx
+# 
+# Top level modules:
+# 	tx_lvds_tx
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v 
+# -- Compiling module rx_lvds_ddio_in
+# -- Compiling module rx_dffpipe
+# -- Compiling module rx_cntr
+# -- Compiling module rx_mux
+# -- Compiling module rx_lvds_rx
+# 
+# Top level modules:
+# 	rx_lvds_rx
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v 
+# -- Compiling module FIFO2
+# 
+# Top level modules:
+# 	FIFO2
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v 
+# -- Compiling module SyncFIFO
+# 
+# Top level modules:
+# 	SyncFIFO
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v 
+# -- Compiling module RegFile_1port
+# 
+# Top level modules:
+# 	RegFile_1port
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v 
+# -- Compiling module module_outport_encoder
+# 
+# Top level modules:
+# 	module_outport_encoder
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v 
+# -- Compiling module module_gen_grant_carry
+# 
+# Top level modules:
+# 	module_gen_grant_carry
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v 
+# -- Compiling module mkTop_fpga2
+# 
+# Top level modules:
+# 	mkTop_fpga2
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v 
+# -- Compiling module mkTop_fpga1
+# 
+# Top level modules:
+# 	mkTop_fpga1
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v 
+# -- Compiling module mkSepRouterAllocator
+# 
+# Top level modules:
+# 	mkSepRouterAllocator
+# End time: 20:00:55 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:55 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v 
+# -- Compiling module mkRouterOutputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterOutputArbitersRoundRobin
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v 
+# -- Compiling module mkRouterInputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterInputArbitersRoundRobin
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v 
+# -- Compiling module mkOutPortFIFO
+# 
+# Top level modules:
+# 	mkOutPortFIFO
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v 
+# -- Compiling module mkNodeTask_host
+# 
+# Top level modules:
+# 	mkNodeTask_host
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v 
+# -- Compiling module mkNodeTask_fpga2_5
+# 
+# Top level modules:
+# 	mkNodeTask_fpga2_5
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v 
+# -- Compiling module mkNodeTask_fpga1_4
+# 
+# Top level modules:
+# 	mkNodeTask_fpga1_4
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v 
+# -- Compiling module mkNodeTask_echo2
+# 
+# Top level modules:
+# 	mkNodeTask_echo2
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v 
+# -- Compiling module mkNodeTask_echo1
+# 
+# Top level modules:
+# 	mkNodeTask_echo1
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v 
+# -- Compiling module mkNetworkSimple2
+# 
+# Top level modules:
+# 	mkNetworkSimple2
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v 
+# -- Compiling module mkNetworkSimple1
+# 
+# Top level modules:
+# 	mkNetworkSimple1
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v 
+# -- Compiling module mkMFpgaTop
+# 
+# Top level modules:
+# 	mkMFpgaTop
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v 
+# -- Compiling module mkIQRouterCoreSimple
+# 
+# Top level modules:
+# 	mkIQRouterCoreSimple
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v 
+# -- Compiling module mkInterFPGA_LVDS
+# 
+# Top level modules:
+# 	mkInterFPGA_LVDS
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v 
+# -- Compiling module mkInputQueue
+# 
+# Top level modules:
+# 	mkInputQueue
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v 
+# -- Compiling module mkCnctBridge
+# 
+# Top level modules:
+# 	mkCnctBridge
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:00:56 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v 
+# -- Compiling module SizedFIFO
+# 
+# Top level modules:
+# 	SizedFIFO
+# End time: 20:00:56 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -i -l msim_transcript -do LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do work.LVDS_fpga -L altera_mf_ver
+# vsim -i -l msim_transcript -do "LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do" work.LVDS_fpga -L altera_mf_ver 
+# Start time: 20:01:22 on Jun 21,2018
+# Loading work.LVDS_fpga
+# Loading work.tx
+# Loading altera_mf_ver.altlvds_tx
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.rx
+# Loading altera_mf_ver.altlvds_rx
+# Loading altera_mf_ver.stratix_lvds_rx
+# Loading altera_mf_ver.stratixgx_dpa_lvds_rx
+# Loading altera_mf_ver.flexible_lvds_rx
+# Loading altera_mf_ver.MF_stratixiii_pll
+# Loading altera_mf_ver.ttn_m_cntr
+# Loading altera_mf_ver.ttn_n_cntr
+# Loading altera_mf_ver.ttn_scale_cntr
+# Loading altera_mf_ver.flexible_lvds_tx
+# do LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/mohil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v 
+# -- Compiling module FIFO10
+# 
+# Top level modules:
+# 	FIFO10
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v 
+# -- Compiling module rx
+# 
+# Top level modules:
+# 	rx
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v 
+# -- Compiling module RegFileLoadSyn
+# 
+# Top level modules:
+# 	RegFileLoadSyn
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v 
+# -- Compiling module LVDS_fpga
+# 
+# Top level modules:
+# 	LVDS_fpga
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v 
+# -- Compiling module tx
+# 
+# Top level modules:
+# 	tx
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v 
+# -- Compiling module tx_ddio_out
+# -- Compiling module tx_ddio_out1
+# -- Compiling module tx_cmpr
+# -- Compiling module tx_cntr
+# -- Compiling module tx_shift_reg
+# -- Compiling module tx_shift_reg1
+# -- Compiling module tx_lvds_tx
+# 
+# Top level modules:
+# 	tx_lvds_tx
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v 
+# -- Compiling module rx_lvds_ddio_in
+# -- Compiling module rx_dffpipe
+# -- Compiling module rx_cntr
+# -- Compiling module rx_mux
+# -- Compiling module rx_lvds_rx
+# 
+# Top level modules:
+# 	rx_lvds_rx
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v 
+# -- Compiling module FIFO2
+# 
+# Top level modules:
+# 	FIFO2
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v 
+# -- Compiling module SyncFIFO
+# 
+# Top level modules:
+# 	SyncFIFO
+# End time: 20:01:24 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:24 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v 
+# -- Compiling module RegFile_1port
+# 
+# Top level modules:
+# 	RegFile_1port
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v 
+# -- Compiling module module_outport_encoder
+# 
+# Top level modules:
+# 	module_outport_encoder
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v 
+# -- Compiling module module_gen_grant_carry
+# 
+# Top level modules:
+# 	module_gen_grant_carry
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v 
+# -- Compiling module mkTop_fpga2
+# 
+# Top level modules:
+# 	mkTop_fpga2
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v 
+# -- Compiling module mkTop_fpga1
+# 
+# Top level modules:
+# 	mkTop_fpga1
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v 
+# -- Compiling module mkSepRouterAllocator
+# 
+# Top level modules:
+# 	mkSepRouterAllocator
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v 
+# -- Compiling module mkRouterOutputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterOutputArbitersRoundRobin
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v 
+# -- Compiling module mkRouterInputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterInputArbitersRoundRobin
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v 
+# -- Compiling module mkOutPortFIFO
+# 
+# Top level modules:
+# 	mkOutPortFIFO
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v 
+# -- Compiling module mkNodeTask_host
+# 
+# Top level modules:
+# 	mkNodeTask_host
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v 
+# -- Compiling module mkNodeTask_fpga2_5
+# 
+# Top level modules:
+# 	mkNodeTask_fpga2_5
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v 
+# -- Compiling module mkNodeTask_fpga1_4
+# 
+# Top level modules:
+# 	mkNodeTask_fpga1_4
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v 
+# -- Compiling module mkNodeTask_echo2
+# 
+# Top level modules:
+# 	mkNodeTask_echo2
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v 
+# -- Compiling module mkNodeTask_echo1
+# 
+# Top level modules:
+# 	mkNodeTask_echo1
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v 
+# -- Compiling module mkNetworkSimple2
+# 
+# Top level modules:
+# 	mkNetworkSimple2
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v 
+# -- Compiling module mkNetworkSimple1
+# 
+# Top level modules:
+# 	mkNetworkSimple1
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v 
+# -- Compiling module mkMFpgaTop
+# 
+# Top level modules:
+# 	mkMFpgaTop
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v 
+# -- Compiling module mkIQRouterCoreSimple
+# 
+# Top level modules:
+# 	mkIQRouterCoreSimple
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v 
+# -- Compiling module mkInterFPGA_LVDS
+# 
+# Top level modules:
+# 	mkInterFPGA_LVDS
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v 
+# -- Compiling module mkInputQueue
+# 
+# Top level modules:
+# 	mkInputQueue
+# End time: 20:01:25 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:25 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v 
+# -- Compiling module mkCnctBridge
+# 
+# Top level modules:
+# 	mkCnctBridge
+# End time: 20:01:26 on Jun 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:26 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v 
+# -- Compiling module SizedFIFO
+# 
+# Top level modules:
+# 	SizedFIFO
+# End time: 20:01:26 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -i -l msim_transcript -do LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do -L altera_mf_ver work.mkMFpgaTop
+# End time: 20:01:44 on Jun 21,2018, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0
+# vsim -i -l msim_transcript -do "LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do" -L altera_mf_ver work.mkMFpgaTop 
+# Start time: 20:01:44 on Jun 21,2018
+# Loading work.mkMFpgaTop
+# Loading work.mkTop_fpga1
+# Loading work.SizedFIFO
+# Loading work.mkNetworkSimple1
+# Loading work.RegFileLoadSyn
+# Loading work.mkIQRouterCoreSimple
+# Loading work.mkInputQueue
+# Loading work.RegFile_1port
+# Loading work.mkOutPortFIFO
+# Loading work.mkSepRouterAllocator
+# Loading work.mkRouterInputArbitersRoundRobin
+# Loading work.module_gen_grant_carry
+# Loading work.mkRouterOutputArbitersRoundRobin
+# Loading work.module_outport_encoder
+# Loading work.mkNodeTask_host
+# Loading work.mkCnctBridge
+# Loading work.FIFO2
+# Loading work.mkNodeTask_echo1
+# Loading work.mkNodeTask_fpga1_4
+# Loading work.mkInterFPGA_LVDS
+# Loading work.SyncFIFO
+# Loading work.mkTop_fpga2
+# Loading work.mkNetworkSimple2
+# Loading work.mkNodeTask_fpga2_5
+# Loading work.mkNodeTask_echo2
+# Loading work.LVDS_fpga
+# Loading work.tx
+# Loading altera_mf_ver.altlvds_tx
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.rx
+# Loading altera_mf_ver.altlvds_rx
+# Loading altera_mf_ver.stratix_lvds_rx
+# Loading altera_mf_ver.stratixgx_dpa_lvds_rx
+# Loading altera_mf_ver.flexible_lvds_rx
+# Loading altera_mf_ver.MF_stratixiii_pll
+# Loading altera_mf_ver.ttn_m_cntr
+# Loading altera_mf_ver.ttn_n_cntr
+# Loading altera_mf_ver.ttn_scale_cntr
+# Loading altera_mf_ver.flexible_lvds_tx
+# do LVDS_echo_FPGA12_simulation_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/mohil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO10.v 
+# -- Compiling module FIFO10
+# 
+# Top level modules:
+# 	FIFO10
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/rx.v 
+# -- Compiling module rx
+# 
+# Top level modules:
+# 	rx
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFileLoadSyn.v 
+# -- Compiling module RegFileLoadSyn
+# 
+# Top level modules:
+# 	RegFileLoadSyn
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/LVDS_fpga.v 
+# -- Compiling module LVDS_fpga
+# 
+# Top level modules:
+# 	LVDS_fpga
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/tx.v 
+# -- Compiling module tx
+# 
+# Top level modules:
+# 	tx
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/tx_lvds_tx.v 
+# -- Compiling module tx_ddio_out
+# -- Compiling module tx_ddio_out1
+# -- Compiling module tx_cmpr
+# -- Compiling module tx_cntr
+# -- Compiling module tx_shift_reg
+# -- Compiling module tx_shift_reg1
+# -- Compiling module tx_lvds_tx
+# 
+# Top level modules:
+# 	tx_lvds_tx
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/db/rx_lvds_rx.v 
+# -- Compiling module rx_lvds_ddio_in
+# -- Compiling module rx_dffpipe
+# -- Compiling module rx_cntr
+# -- Compiling module rx_mux
+# -- Compiling module rx_lvds_rx
+# 
+# Top level modules:
+# 	rx_lvds_rx
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/FIFO2.v 
+# -- Compiling module FIFO2
+# 
+# Top level modules:
+# 	FIFO2
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SyncFIFO.v 
+# -- Compiling module SyncFIFO
+# 
+# Top level modules:
+# 	SyncFIFO
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/RegFile_1port.v 
+# -- Compiling module RegFile_1port
+# 
+# Top level modules:
+# 	RegFile_1port
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_outport_encoder.v 
+# -- Compiling module module_outport_encoder
+# 
+# Top level modules:
+# 	module_outport_encoder
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/module_gen_grant_carry.v 
+# -- Compiling module module_gen_grant_carry
+# 
+# Top level modules:
+# 	module_gen_grant_carry
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga2.v 
+# -- Compiling module mkTop_fpga2
+# 
+# Top level modules:
+# 	mkTop_fpga2
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkTop_fpga1.v 
+# -- Compiling module mkTop_fpga1
+# 
+# Top level modules:
+# 	mkTop_fpga1
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkSepRouterAllocator.v 
+# -- Compiling module mkSepRouterAllocator
+# 
+# Top level modules:
+# 	mkSepRouterAllocator
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterOutputArbitersRoundRobin.v 
+# -- Compiling module mkRouterOutputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterOutputArbitersRoundRobin
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkRouterInputArbitersRoundRobin.v 
+# -- Compiling module mkRouterInputArbitersRoundRobin
+# 
+# Top level modules:
+# 	mkRouterInputArbitersRoundRobin
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:46 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkOutPortFIFO.v 
+# -- Compiling module mkOutPortFIFO
+# 
+# Top level modules:
+# 	mkOutPortFIFO
+# End time: 20:01:46 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_host.v 
+# -- Compiling module mkNodeTask_host
+# 
+# Top level modules:
+# 	mkNodeTask_host
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga2_5.v 
+# -- Compiling module mkNodeTask_fpga2_5
+# 
+# Top level modules:
+# 	mkNodeTask_fpga2_5
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_fpga1_4.v 
+# -- Compiling module mkNodeTask_fpga1_4
+# 
+# Top level modules:
+# 	mkNodeTask_fpga1_4
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo2.v 
+# -- Compiling module mkNodeTask_echo2
+# 
+# Top level modules:
+# 	mkNodeTask_echo2
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNodeTask_echo1.v 
+# -- Compiling module mkNodeTask_echo1
+# 
+# Top level modules:
+# 	mkNodeTask_echo1
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple2.v 
+# -- Compiling module mkNetworkSimple2
+# 
+# Top level modules:
+# 	mkNetworkSimple2
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkNetworkSimple1.v 
+# -- Compiling module mkNetworkSimple1
+# 
+# Top level modules:
+# 	mkNetworkSimple1
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkMFpgaTop.v 
+# -- Compiling module mkMFpgaTop
+# 
+# Top level modules:
+# 	mkMFpgaTop
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkIQRouterCoreSimple.v 
+# -- Compiling module mkIQRouterCoreSimple
+# 
+# Top level modules:
+# 	mkIQRouterCoreSimple
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInterFPGA_LVDS.v 
+# -- Compiling module mkInterFPGA_LVDS
+# 
+# Top level modules:
+# 	mkInterFPGA_LVDS
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkInputQueue.v 
+# -- Compiling module mkInputQueue
+# 
+# Top level modules:
+# 	mkInputQueue
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/mkCnctBridge.v 
+# -- Compiling module mkCnctBridge
+# 
+# Top level modules:
+# 	mkCnctBridge
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files {/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:47 on Jun 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files" /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/src_files/SizedFIFO.v 
+# -- Compiling module SizedFIFO
+# 
+# Top level modules:
+# 	SizedFIFO
+# End time: 20:01:47 on Jun 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave -position insertpoint sim:/mkMFpgaTop/*
+add wave -position insertpoint sim:/mkMFpgaTop/fpga2/*
+add wave -position insertpoint sim:/mkMFpgaTop/xfpga2/xfpga5/outin_/*
+force -freeze sim:/mkMFpgaTop/CLK 1 0, 0 {10000 ps} -r {20 ns}
+force -freeze sim:/mkMFpgaTop/RST_N 1 0
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h98000000 0
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put 0 0
+force -freeze sim:/mkMFpgaTop/EN_getFlit0_get 0 0
+run
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga1.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga2.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga2.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h00000000 0
+run
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: mkMFpgaTop.fpga2.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: mkMFpgaTop.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+run
+run
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 107500  Instance: mkMFpgaTop.fpga2.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 107500  Instance: mkMFpgaTop.fpga1.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h98000000 0
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put St1 0
+force -freeze sim:/mkMFpgaTop/EN_getFlit0_get St1 0
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'hD80FFF00 0
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put St0 0
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+restart
+# Loading work.mkMFpgaTop
+# Loading work.mkTop_fpga1
+# Loading work.SizedFIFO
+# Loading work.mkNetworkSimple1
+# Loading work.RegFileLoadSyn
+# Loading work.mkIQRouterCoreSimple
+# Loading work.mkInputQueue
+# Loading work.RegFile_1port
+# Loading work.mkOutPortFIFO
+# Loading work.mkSepRouterAllocator
+# Loading work.mkRouterInputArbitersRoundRobin
+# Loading work.module_gen_grant_carry
+# Loading work.mkRouterOutputArbitersRoundRobin
+# Loading work.module_outport_encoder
+# Loading work.mkNodeTask_host
+# Loading work.mkCnctBridge
+# Loading work.FIFO2
+# Loading work.mkNodeTask_echo1
+# Loading work.mkNodeTask_fpga1_4
+# Loading work.mkInterFPGA_LVDS
+# Loading work.SyncFIFO
+# Loading work.mkTop_fpga2
+# Loading work.mkNetworkSimple2
+# Loading work.mkNodeTask_fpga2_5
+# Loading work.mkNodeTask_echo2
+# Loading work.LVDS_fpga
+# Loading work.tx
+# Loading work.rx
+force -freeze sim:/mkMFpgaTop/CLK 1 0, 0 {10000 ps} -r {20 ns}
+force -freeze sim:/mkMFpgaTop/RST_N 1 0
+force -freeze sim:/mkMFpgaTop/EN_getFlit0_get 0 0
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put 0 0
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h00000000 0
+run
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga1.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga2.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL self reset due to loss of lock
+# Time: 0  Instance: mkMFpgaTop.fpga2.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+run
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: mkMFpgaTop.fpga2.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: mkMFpgaTop.fpga1.tx1.ALTLVDS_TX_component.MF_stratixiii_pll.u6
+run
+run
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 107500  Instance: mkMFpgaTop.fpga2.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 107500  Instance: mkMFpgaTop.fpga1.rx1.ALTLVDS_RX_component.MF_stratixiii_pll.u8
+force -freeze sim:/mkMFpgaTop/RST_N St0 0
+run
+force -freeze sim:/mkMFpgaTop/RST_N St1 0
+run
+# Debug and Trace files created
+# Debug and Trace files created
+# Debug and Trace files created
+# Debug and Trace files created
+# Debug and Trace files created
+# Debug and Trace files created
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h98000000 0
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put St1 0
+force -freeze sim:/mkMFpgaTop/EN_getFlit0_get St1 0
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'hD80FFF00 0
+run
+#          2	: tid=1 STATE (enter)	recv_11_l24c8 
+#          2	: tid=6 STATE (enter)	recv_11_l17c8 
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+force -freeze sim:/mkMFpgaTop/EN_putFlit0_put St0 0
+force -freeze sim:/mkMFpgaTop/putFlit0_put 32'h00000000 0
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+run
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+#         44	: tid=6 STATE (exit)	recv_11_l17c8 
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+#         45	: tid=6  displaystmt_12_l18c11 instance=x	X { v: 'h00fff00 }
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+#         46	: tid=6 STATE (enter)	send_13_l19c8 
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+#         48	: tid=6 STATE (exit)	send_13_l19c8 
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+#         49	: tid=6 STATE (enter)	recv_11_l17c8 
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+# Warning: SizedFIFO: mkMFpgaTop.xfpga1.flitsr_port_out_0_f.error_checks -- Dequeuing from empty fifo
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/mohil/LVDS/LVDS_echo_FPGA12_simulation/simulation/modelsim/wave.do
+# End time: 21:08:26 on Jun 21,2018, Elapsed time: 1:06:42
+# Errors: 0, Warnings: 0

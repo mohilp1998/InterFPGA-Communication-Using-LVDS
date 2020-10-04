@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.249
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 8.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 8.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 12.958
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : 9.678
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rx_inclock_fpga2'
+Slack : 9.831
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 8.302
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 8.517
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 13.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.696
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rx_inclock_fpga2'
+Slack : 9.824
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : 1.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.558
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 8.858
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.034
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 14.787
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 4.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]'
+Slack : 4.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.442
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rx_inclock_fpga2'
+Slack : 9.596
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga2|rx1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 9.780
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga2|tx1|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]'
+Slack : 9.781
+TNS   : 0.000
+
+------------------------------------------------------------
